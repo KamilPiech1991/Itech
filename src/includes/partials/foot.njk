@@ -1,0 +1,122 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
+<script>
+    var glideMulti = new Glide('.about-slider', {
+      type: 'slider',
+      autoplay: 4000,
+      perView: 1
+    });
+    var glideMulti2 = new Glide('.how-we-work-slider', {
+      type: 'slider',
+      autoplay: 4000,
+      perView: 1
+    });
+    var glideMulti3 = new Glide('.recent-services-slider', {
+      type: 'carousel',
+      autoplay: 4000,
+      perView: 5,
+      gap: 40,
+       breakpoints: {
+        1280: {
+          perView: 5,
+          },
+        1024: {
+          perView: 3,
+          },
+        768: {
+          perView: 2,
+          }
+        }
+    });
+    var glideMulti4 = new Glide('.latest-posts-slider', {
+      type: 'carousel',
+      autoplay: 4000,
+      perView: 3,
+      gap: 30,
+      breakpoints: {
+        1024: {
+          perView: 2,
+          },
+        768: {
+          perView: 1,
+          }
+        }
+    });
+    var glideMulti5 = new Glide('.reviews-slider', {
+      type: 'carousel',
+      autoplay: 4000,
+      perView: 3.5,
+      gap: 30,
+      breakpoints: {
+        1024: {
+          perView: 3.5,
+          },
+        768: {
+          perView: 1.1,
+          }
+        }
+    });
+glideMulti.mount();
+glideMulti2.mount();
+glideMulti3.mount();
+glideMulti4.mount();
+glideMulti5.mount();
+</script>
+
+<script>
+  let t = document.getElementsByClassName("accordion");
+  for (let e = 0; e < t.length; e++) t[e].addEventListener("click", function () {
+    let e = this.nextElementSibling;
+    if (e.style.maxHeight) e.style.maxHeight = null, this.classList.remove("open");
+    else {
+      for (let a = 0; a < t.length; a++) t[a].classList.remove("open"), t[a].nextElementSibling.style.maxHeight = null;
+      e.style.maxHeight = e.scrollHeight + "px", this.classList.toggle("open");
+    }
+  })
+
+</script>
+
+<script>
+
+var tabLinks = document.querySelectorAll(".tablinks");
+var tabContent = document.querySelectorAll(".tabcontent");
+
+
+tabLinks.forEach(function(el) {
+   el.addEventListener("click", openTabs);
+});
+
+
+function openTabs(el) {
+   var btnTarget = el.currentTarget;
+   var item = btnTarget.dataset.item;
+
+   tabContent.forEach(function(el) {
+      el.classList.remove("active");
+   });
+
+   tabLinks.forEach(function(el) {
+      el.classList.remove("active");
+   });
+
+   document.querySelector("#" + item).classList.add("active");
+   
+   btnTarget.classList.add("active");
+}
+
+</script>
+
+<script>
+  const navButton = document.querySelector(".nav-btn");
+  const navMenu   = document.querySelector(".header-bottom-nav");
+
+  navButton.addEventListener('click', () => {
+    navMenu.classList.toggle("active");
+    navButton.classList.toggle("active");
+  })
+
+</script>
+<script src="/assets/js/cookieconsent.js"></script>
+<script src="/assets/js/cookieconsent-init.js"></script>
+
+</body>
+</html>

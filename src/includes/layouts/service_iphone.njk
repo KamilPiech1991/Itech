@@ -1,0 +1,640 @@
+{% include 'partials/head.njk' %}
+{% include 'partials/header.njk' %}
+
+<section class="pt-medium pb-large">
+    <div class="container">
+
+        <div class="row">
+            <div class="offset-md-2 col-md-8">
+                <div class="single-post-title-wrap">
+                    <div class="breacrumbs">
+                        <a href="/">
+                                Główna
+                            </a>
+                        <span>
+                                | 
+                            </span>
+                        <a href="/naprawa">
+                                Naprawa
+                            </a>
+                        <span>
+                                |
+                            </span>
+                        <span>
+                            {{ title }}
+                        </span>
+                    </div>
+                    <h1 class="single-post-title mt-4 mb-5">
+                        Naprawa {{ title }}
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+    {% if naprawa_braku_obrazu %}
+        <div class="row gx-5 service-item">
+            <div class="col-3 col-3 offset-md-1 col-md-1">
+                <img src="/assets/img/services/items-iphone/naprawa-braku-obrazu.png">
+            </div>
+            <div class="col-9 col-9 col-md-3">
+                <h3 class="h5">
+                    Naprawa braku obrazu {{ title }}
+                </h3>
+                <p class="mt-4">
+                    Cena: {{ naprawa_braku_obrazu }} zł
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="mt-4">
+                    Twój iPhone nie odpowiada, a ekran jest czarny? Telefon dzwoni, a ty nie wiesz kto to? Albo sen z powiek spędza ci natrętny budzik, którego nie możesz wyłączyć? Nie martw się, twój iPhone ma się dobrze. Wystarczy naprawa braku obrazu w naszym serwisie, byś znów mógł korzystać bez przeszkód.
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="mt-4">
+                    <a href="/zglos.php" class="button">Zamów</a>
+                </p>
+            </div>
+        </div>
+    {% endif %}
+        
+    {% if naprawa_uszkodzonych_sciezek %}
+        <div class="row gx-5 service-item">
+            <div class="col-3 col-3 offset-md-1 col-md-1">
+                <img src="/assets/img/services/items-iphone/naprawa-uszkodzonych-sciezek.png">
+            </div>
+            <div class="col-9 col-9 col-md-3">
+                <h3 class="h5">
+                    Naprawa uszkodzonych ścieżek {{ title }}
+                </h3>
+                <p class="mt-4">
+                    Cena: {{ naprawa_uszkodzonych_sciezek }} zł
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="mt-4">
+                    Po wymianie wyświetlacza w twoim iPhone dalej coś nie działa? Telefon nie włącza się i nie ma obrazu? Czasem przy samodzielnie wykonywanych naprawach, można włożyć „nie tą śrubkę w nie ten gwint” i uszkodzić ścieżki na płycie. ITech pomoże Ci naprawić błędy!
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="mt-4">
+                    <a href="/zglos.php" class="button">Zamów</a>
+                </p>
+            </div>
+        </div>
+    {% endif %}
+
+    {% if naprawa_ukladu_audio %}
+        <div class="row gx-5 service-item">
+            <div class="col-3 col-3 offset-md-1 col-md-1">
+                <img src="/assets/img/services/items-iphone/naprawa-ukladu-audio.png">
+            </div>
+            <div class="col-9 col-9 col-md-3">
+                <h3 class="h5">
+                    Naprawa układu audio IC - Brak dźwięku {{ title }}
+                </h3>
+                <p class="mt-4">
+                    Cena: {{ naprawa_ukladu_audio }} zł
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="mt-4">
+                   Twój iPhone stał się głucho-niemy? Jeśli nie możesz włączyć trybu głośnomówiącego i nie działa dyktafon, a głośniki i mikrofony nie dają znaku życia, to uszkodzeniu uległ układ audio w Twoim telefonie. Nasi specjaliści od Apple w ITech maja doświadczenie w takich naprawach!
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="mt-4">
+                    <a href="/zglos.php" class="button">Zamów</a>
+                </p>
+            </div>
+        </div>
+    {% endif %}
+
+    {% if naprawa_wifi_bluetooth %}
+        <div class="row gx-5 service-item">
+            <div class="col-3 col-3 offset-md-1 col-md-1">
+                <img src="/assets/img/services/items-iphone/naprawa-ukladu-wifi.png">
+            </div>
+            <div class="col-9 col-9 col-md-3">
+                <h3 class="h5">
+                    Naprawa układu WIFI Bluetooth {{ title }}
+                </h3>
+                <p class="mt-4">
+                    Cena: {{ naprawa_wifi_bluetooth }} zł
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="mt-4">
+                    Twój iPhone nie może złapać sygnału WIFI? Nie możesz połączyć telefonu z innym urządzeniem za pomocą Bluetooth? Przyczyną  jest uszkodzony układu WIFI/Bluetooth. Dla naszego serwisu takie naprawy to chleb powszedni!
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="mt-4">
+                    <a href="/zglos.php" class="button">Zamów</a>
+                </p>
+            </div>
+        </div>
+    {% endif %}
+
+    {% if naprawa_ukladu_gsm_brak_sieci %}
+        <div class="row gx-5 service-item">
+            <div class="col-3 col-3 offset-md-1 col-md-1">
+                <img src="/assets/img/services/items-iphone/naprawa-ukladu-gsm.png">
+            </div>
+            <div class="col-9 col-9 col-md-3">
+                <h3 class="h5">
+                   Naprawa układu GSM - Baseband/Brak sieci {{ title }}
+                </h3>
+                <p class="mt-4">
+                    Cena: {{ naprawa_ukladu_gsm_brak_sieci }} zł
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="mt-4">
+                    Twój iPhone gubi zasięg? A może wcale nie wykrywa karty? To oznacza, że konieczna jest naprawa układu GSM/Baseband. Zapraszamy do naszego serwisu!
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="mt-4">
+                    <a href="/zglos.php" class="button">Zamów</a>
+                </p>
+            </div>
+        </div>
+    {% endif %}
+
+    {% if naprawa_oprogramowania %}
+        <div class="row gx-5 service-item">
+            <div class="col-3 col-3 offset-md-1 col-md-1">
+                <img src="/assets/img/services/items-iphone/naprawa-oprogramowania.png">
+            </div>
+            <div class="col-9 col-9 col-md-3">
+                <h3 class="h5">
+                    Naprawa oprogramowania {{ title }}
+                </h3>
+                <p class="mt-4">
+                    Cena: {{ naprawa_oprogramowania }} zł
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="mt-4">
+                    Twój iPhone jest juz nadgryziony zębem czsu? Nie chodzi tak szybko i płynnie jak na początku? Warto odświeżyć swój telefon dzięki wgraniu na nowo Twojego ulubionego systemu IOS. ITech służy pomocą!
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="mt-4">
+                    <a href="/zglos.php" class="button">Zamów</a>
+                </p>
+            </div>
+        </div>
+    {% endif %}
+
+    {% if naprawa_uszkodzonych_gniazd_ppc %}
+        <div class="row gx-5 service-item">
+            <div class="col-3 col-3 offset-md-1 col-md-1">
+                <img src="/assets/img/services/items-iphone/naprawa-uszkodzonych-gniazd.png">
+            </div>
+            <div class="col-9 col-9 col-md-3">
+                <h3 class="h5">
+                    Naprawa uszkodzonych gniazd FPC {{ title }}
+                </h3>
+                <p class="mt-4">
+                    Cena: {{ naprawa_uszkodzonych_gniazd_ppc }} zł
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="mt-4">
+                    Po wymianie wyświetlacza w twoim iPhone dalej coś nie działa? Chciałeś samodzielnie wymienić wyświetlacz według poradnika? Najprawdopodobniej uszkodzone zostały gniazda FPC na płycie głównej. W ITech pomożemy Ci usunąć usterki!
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="mt-4">
+                    <a href="/zglos.php" class="button">Zamów</a>
+                </p>
+            </div>
+        </div>
+    {% endif %}
+
+    {% if naprawa_pamieci_nan %}
+        <div class="row gx-5 service-item">
+            <div class="col-3 col-3 offset-md-1 col-md-1">
+                <img src="/assets/img/services/items-iphone/naprawa-pamieci-nand.png">
+            </div>
+            <div class="col-9 col-9 col-md-3">
+                <h3 class="h5">
+                    Naprawa pamięci NAND {{ title }}
+                </h3>
+                <p class="mt-4">
+                    Cena: {{ naprawa_pamieci_nan }} zł
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="mt-4">
+                    Twój iPhone ciągle woła, że ma za mało pamięci? Czyścisz, usuwasz, i nadal jest tak samo? A może sam się wyłącza, albo wcale się nie uruchamia? Wszystko wskazuje na to, że problem jest z pamięcią NAND. Przyjdź lub wyślij telefon do naszego serwisu, zajmiemy się tym!
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="mt-4">
+                    <a href="/zglos.php" class="button">Zamów</a>
+                </p>
+            </div>
+        </div>
+    {% endif %}
+
+    {% if naprawa_ukladu_podswietlania %}
+        <div class="row gx-5 service-item">
+            <div class="col-3 col-3 offset-md-1 col-md-1">
+                <img src="/assets/img/services/items-iphone/naprawa-ukladu-podswietlania.png">
+            </div>
+            <div class="col-9 col-9 col-md-3">
+                <h3 class="h5">
+                    Naprawa układu podświetlania - Backlight IC {{ title }}
+                </h3>
+                <p class="mt-4">
+                    Cena: {{ naprawa_ukladu_podswietlania }} zł
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="mt-4">
+                    Telefon dzwoni, a ty nie wiesz kto to? A może sen z powiek spędza ci natrętny budzik, którego nie możesz wyłączyć, bo przecież jak? Nie martw się, wystarczy naprawa układu podświetlenia w naszym serwisie, byś znów mógł bez przeszkód przełączać budzik na drzemkę w nieskończoność.
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="mt-4">
+                    <a href="/zglos.php" class="button">Zamów</a>
+                </p>
+            </div>
+        </div>
+    {% endif %}
+
+        <div class="row gx-5 service-item">
+            <div class="col-3 col-3 offset-md-1 col-md-1">
+                <img src="/assets/img/services/items-iphone/naprawa-ukladu-dotyku.png">
+            </div>
+            <div class="col-9 col-9 col-md-3">
+                <h3 class="h5">
+                    Naprawa układu dotyku - Touch IC {{ title }}
+                </h3>
+                <p class="mt-4">
+                    Cena: {{ naprawa_ukladu_dotyku }} zł
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="mt-4">
+                    Klikasz w ekran, a Twój iPhone nie reaguje? A może u góry ekranu pojawił się niezidentyfikowany szary pasek? Wystarczy naprawa układu dotyku w naszym serwisie, a twój telefon znów będzie działał!
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="mt-4">
+                    <a href="/zglos.php" class="button">Zamów</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row gx-5 service-item">
+            <div class="col-3 col-3 offset-md-1 col-md-1">
+                <img src="/assets/img/services/items-iphone/naprawa-ukladu-ladowania.png">
+            </div>
+            <div class="col-9 col-9 col-md-3">
+                <h3 class="h5">
+                    Naprawa układu ładowania {{ title }}
+                </h3>
+                <p class="mt-4">
+                    Cena: {{ naprawa_ukladu_ladowania }} zł
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="mt-4">
+                    Twój iPhone ma problemy z ładowaniem, a % baterii spada w rekordowym czasie? Korzystałeś z nieodpowiedniej ładowarki samochodowej? Te wszystkie problemy rozwiążesz w naszym serwisie, naprawiając układ ładowania!
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="mt-4">
+                    <a href="/zglos.php" class="button">Zamów</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row gx-5 service-item">
+            <div class="col-3 col-3 offset-md-1 col-md-1">
+                <img src="/assets/img/services/items-iphone/naprawa-zalania.png">
+            </div>
+            <div class="col-9 col-9 col-md-3">
+                <h3 class="h5">
+                    Naprawa zalania {{ title }}
+                </h3>
+                <p class="mt-4">
+                    Cena: {{ naprawa_zalania }} zł
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="mt-4">
+                    Twój iPhone zanurkował w wodzie? Może wypadek w łazience? Nie trać czasu na próby napraw na własną rękę, przynieś go do naszego serwisu! Im szybciej telefon po zalaniu trafi do nas, tym większa szansa na naprawę. Zapraszamy do naszego serwisu!
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="mt-4">
+                    <a href="/zglos.php" class="button">Zamów</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row gx-5 service-item">
+            <div class="col-3 offset-md-1 col-md-1">
+                <img src="/assets/img/services/items-iphone/wymiana-przedniego-aparatu.png">
+            </div>
+            <div class="col-9 col-md-3">
+                <h3 class="h5">
+                    Wymiana przedniego aparatu {{ title }}
+                </h3>
+                <p class="mt-4">
+                    Cena: {{ wymiana_przedniego_aparatu }} zł
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="mt-4">
+                    Aktualnie aparaty są jednym z najważniejszych elementów w telefonach. W erze instagrama dobry aparat to absolutna podstawa dla każdego posiadacza smartfona. Jeśli aparat w twoim iPhone nie działa, ITech może Ci w tym pomóc!
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="mt-4">
+                    <a href="/zglos.php" class="button">Zamów</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row gx-5 service-item">
+            <div class="col-3 offset-md-1 col-md-1">
+                <img src="/assets/img/services/items-iphone/wymiana-przyciskow-glosnosci.png">
+            </div>
+            <div class="col-9 col-md-3">
+                <h3 class="h5">
+                    Wymiana przycisków głośności {{ title }}
+                </h3>
+                <p class="mt-4">
+                    Cena: {{ wymiana_przyciskow_glosnosci }} zł
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="mt-4">
+                    Przyciski głośności oraz blokady w Twoim iPhone zaczęły wariować albo wcale nie dają znaku życia? Pora na wymianę przycisków w naszym serwisie!
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="mt-4">
+                    <a href="/zglos.php" class="button">Zamów</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row gx-5 service-item">
+            <div class="col-3 offset-md-1 col-md-1">
+                <img src="/assets/img/services/items-iphone/wymiana-tylnego-aparatu.png">
+            </div>
+            <div class="col-9 col-md-3">
+                <h3 class="h5">
+                    Wymiana tylnego aparatu {{ title }}
+                </h3>
+                <p class="mt-4">
+                    Cena: {{ wymiana_tylnego_aparatu }} zł
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="mt-4">
+                    Aktualnie aparaty są jednym z najważniejszych elementów w telefonach. W erze instagrama dobry aparat to absolutna podstawa dla każdego posiadacza smartfona. Jeśli aparat w twoim iPhone nie działa, ITech może Ci w tym pomóc!
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="mt-4">
+                    <a href="/zglos.php" class="button">Zamów</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row gx-5 service-item">
+            <div class="col-3 offset-md-1 col-md-1">
+                <img src="/assets/img/services/items-iphone/wymiana-wyswietlacza.png">
+            </div>
+            <div class="col-9 col-md-3">
+                <h3 class="h5">
+                    Wymiana wyświetlacza {{ title }}
+                </h3>
+                <p class="mt-4">
+                    Cena: {{ wymiana_wyswietlacza }} zł
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="mt-4">
+                    Każdemu zdarza się upuścić telefon. Wypadki chodzą po ludziach. Jeśli twój iPhone wygląda jak po zderzenia z samochodem, skontaktuj się z nami, a Twój telefon będzie wyglądał jak nowy!
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="mt-4">
+                    <a href="/zglos.php" class="button">Zamów</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row gx-5 service-item">
+            <div class="col-3 offset-md-1 col-md-1">
+                <img src="/assets/img/services/items-iphone/wymiana-zlacz-ladowania.png">
+            </div>
+            <div class="col-9 col-md-3">
+                <h3 class="h5">
+                    Wymiana złącza ładowania {{ title }}
+                </h3>
+                <p class="mt-4">
+                    Cena: {{ wymiana_zlacza_ladowania }} zł
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="mt-4">
+                    Masz problem z ładowaniem swojego Iphone'a? Przy podłączaniu do ładowarki nie ma żadnej reakcji? W prawo, w lewo, w górę i w dół, i nadal zero reakcji? Jeśli ładowarka jest sprawna, uszkodzeniu uległo złącze ładowania w Twoim iPhone. ITech służy pomocą.
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="mt-4">
+                    <a href="/zglos.php" class="button">Zamów</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row gx-5 service-item">
+            <div class="col-3 offset-md-1 col-md-1">
+                <img src="/assets/img/services/items-iphone/wymiana-baterii.png">
+            </div>
+            <div class="col-9 col-md-3">
+                <h3 class="h5">
+                    Wymiana baterii {{ title }}
+                </h3>
+                <p class="mt-4">
+                    Cena: {{ wymiana_baterii }} zł
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="mt-4">
+                    Czy ty też wiecznie zajmujesz to jedno jedyne dostępne gniazdko żeby podłączyć ładowarkę? Bateria w Twoim iPhone nie przetrwa już bez ciągłego ładowania. Na szczęście, wystarczy wymienić ją na nową, a Twój telefon przestanie być zależny od ładowarki. W ITech pomożemy Ci z tym!
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="mt-4">
+                    <a href="/zglos.php" class="button">Zamów</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row gx-5 service-item">
+            <div class="col-3 offset-md-1 col-md-1">
+                <img src="/assets/img/services/items-iphone/wymiana-obudowy.png">
+            </div>
+            <div class="col-9 col-md-3">
+                <h3 class="h5">
+                    Wymiana obudowy {{ title }}
+                </h3>
+                <p class="mt-4">
+                    Cena: {{ wymiana_obudowy }} zł
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="mt-4">
+                   Obudowa Twojego iPhone ma za sobą ciężkie chwile? Ciągłe upadki, otarcia kluczami, zarysowania, obite rogi… Jesteśmy w stanie Ci pomóc. Zmienimy obudowę na nową, aby Twój iPhone mógł dostać drugą młodość…
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="mt-4">
+                    <a href="/zglos.php" class="button">Zamów</a>
+                </p>
+            </div>
+        </div>
+
+    {% if wymiana_przycisku_home %}
+        <div class="row gx-5 service-item">
+            <div class="col-3 offset-md-1 col-md-1">
+                <img src="/assets/img/services/items-iphone/naprawa-braku-obrazu.png">
+            </div>
+            <div class="col-9 col-md-3">
+                <h3 class="h5">
+                    Wymiana przycisku home {{ title }}
+                </h3>
+                <p class="mt-4">
+                    Cena: {{ wymiana_przycisku_home }} zł
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="mt-4">
+                    Przycisk Home w iPhone jest wręcz niezbędny, w momencie w którym przestaje działać, korzystanie z telefonu staje się mocno utrudnione. W 90% przypadków wymagana jest wymiana na nowy. Nie czekaj, zdecyduj się na wymianę w Itech.
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="mt-4">
+                    <a href="/zglos.php" class="button">Zamów</a>
+                </p>
+            </div>
+        </div>
+    {% endif %}
+
+        <div class="row gx-5 service-item">
+            <div class="col-3 offset-md-1 col-md-1">
+                <img src="/assets/img/services/items-iphone/naprawa-wibracji.png">
+            </div>
+            <div class="col-9 col-md-3">
+                <h3 class="h5">
+                    Naprawa wibracji {{ title }}
+                </h3>
+                <p class="mt-4">
+                    Cena: {{ naprawa_wibracji }} zł
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="mt-4">
+                    Brak wibracji w Twoim iPhone? Jest Ci niezbędna, nie czekaj i skorzystaj z usługi wymiany silniczka wibracji w naszym serwisie.
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="mt-4">
+                    <a href="/zglos.php" class="button">Zamów</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row gx-5 service-item">
+            <div class="col-3 offset-md-1 col-md-1">
+                <img src="/assets/img/services/items-iphone/wymiana-mikrofonu.png">
+            </div>
+            <div class="col-9 col-md-3">
+                <h3 class="h5">
+                    Wymiana mikrofonu {{ title }}
+                </h3>
+                <p class="mt-4">
+                    Cena: {{ wymiana_mikrofonu }} zł
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="mt-4">
+                    Podczas rozmowy wszyscy narzekają, że słabo Cię słychać? Krzyczysz do telefonu a dalej cięzko Cię zrozumieć? To znak, że czas na wymianę mikrofonu w twoim iPhone. Zapraszamy do naszego serwisu!
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="mt-4">
+                    <a href="/zglos.php" class="button">Zamów</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row gx-5 service-item">
+            <div class="col-3 offset-md-1 col-md-1">
+                <img src="/assets/img/services/items-iphone/wymiana-glosnika-rozmow.png">
+            </div>
+            <div class="col-9 col-md-3">
+                <h3 class="h5">
+                    Wymiana głośnika rozmów {{ title }}
+                </h3>
+                <p class="mt-4">
+                    Cena: {{ wymiana_glosnika_rozmow }} zł
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="mt-4">
+                    Podczas połączenia po drugiej stronie słuchawki jest głucha cisza? Albo drugą osobę słychać nadzwyczaj cicho, mimo podgłoszenia rozmowy do maximum? To oznacza problemy z głośnikiem rozmów w Twoim iPhone.
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="mt-4">
+                    <a href="/zglos.php" class="button">Zamów</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row gx-5 service-item">
+            <div class="col-3 offset-md-1 col-md-1">
+                <img src="/assets/img/services/items-iphone/wymiana-glosnika-audio.png">
+            </div>
+            <div class="col-9 col-md-3">
+                <h3 class="h5">
+                    Wymiana głośnika audio {{ title }}
+                </h3>
+                <p class="mt-4">
+                    Cena: {{ wymiana_glosnika_audio }} zł
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="mt-4">
+                    Dźwięki w Twoim telefonie nie odtwarzają się tak jak powinny? Jedyne co słychać to zakłócenia, a muzyka przerywa w trakcie słuchania? Najprawdopodobniej masz uszkodzony głośnik audio. Serwis Itech radzi sobie bez problemu z takimi naprawami.
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="mt-4">
+                    <a href="/zglos.php" class="button">Zamów</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="offset-md-2 col-md-8">
+                {{ content | safe }}
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{% include "partials/foot.njk" %}
+{% include "partials/footer.njk" %}

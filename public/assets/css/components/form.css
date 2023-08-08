@@ -1,0 +1,33 @@
+input:not(.button),
+textarea {
+  padding: 1em 1em;
+  width: -moz-available;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  border: 2px solid var(--color-accent-1);
+  border-radius: 22px;
+}
+
+textarea {
+  display: block;
+  margin-bottom: 1em;
+  height: 105px;
+}
+
+input:active,
+input:focus,
+input:visited {
+  outline: none;
+}
+
+label {
+  display: block;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  width: -moz-available;
+  max-width: -webkit-fill-available;
+  margin-bottom: 1em;
+}

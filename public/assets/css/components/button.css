@@ -1,0 +1,37 @@
+.button {
+  display: inline-block;
+  padding: 1em 3em;
+  background-color: var(--color-accent-1);
+  color: var(--color-light-1);
+  border: none;
+  border-radius: 70px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #51A3F9;
+}
+
+.btn-red {
+  background-color: var(--color-accent-2);
+  transition: 0.3s ease-in-out;
+}
+
+.btn-red:hover {
+  background-color: #FF5353;
+}
+
+.button-arrow {
+  color: var(--color-accent-1);
+  text-transform: uppercase;
+}
+
+.button-arrow svg {
+  margin-bottom: -2px;
+  margin-right: 5px;
+}

@@ -1,0 +1,106 @@
+--- 
+layout: 'layouts/base.njk'
+title: Serwis Iphone
+description: Opis
+---
+
+<section class="pt-small">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="single-post-title-wrap">
+                    <div class="breacrumbs">
+                        <a href="/">
+                                Główna
+                            </a>
+                        <span>
+                                |
+                            </span>
+                        <span>
+                            {{ title }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-about pt-xsmall pb-md-medium">
+    <div class="container lines-right">
+        <div class="row flex-md-row-reverse">
+            <div class="offset-md-1 col-md-6">
+                <div class="glide about-slider">
+                    <div class="glide__track" data-glide-el="track">
+     <ul class="glide__slides">
+                            <li class="glide__slide">
+                                {% Image "src/assets/img/sections/about/itech-4.jpg", "ITech - Serwis Apple Otwock" %}
+                            </li>
+                            <li class="glide__slide">
+                                {% Image "src/assets/img/sections/about/itech-5.jpg", "ITech - Serwis Apple Otwock" %}
+                            </li>
+                            <li class="glide__slide">
+                                {% Image "src/assets/img/sections/about/itech-3.jpg", "ITech - Serwis Apple Otwock" %}
+                            </li>
+                            <li class="glide__slide">
+                                {% Image "src/assets/img/sections/about/itech-2.png", "ITech - Serwis IMAck Otwock" %}
+                            </li>
+                            <li class="glide__slide">
+                                {% Image "src/assets/img/sections/about/itech-1.png", "ITech - Serwis Apple Otwock" %}
+                            </li>
+                            <li class="glide__slide">
+                                {% Image "src/assets/img/sections/about/itech-7.jpg", "ITech - Serwis Iwatch Otwock" %}
+                            </li>
+                            <li class="glide__slide">
+                                {% Image "src/assets/img/sections/about/itech-6.jpg", "ITech - Serwis Apple Otwock" %}
+                            </li>
+                            <li class="glide__slide">
+                                {% Image "src/assets/img/sections/about/itech-8.jpg", "ITech - Serwis Ipad Otwock" %}
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-md-5 d-flex align-items-center">
+                <div>
+                    <h2 class="h1 mt-3 color-accent uppercase">
+                        {{ title }}
+                    </h2>
+                    <p>
+                       Nasza firma Itech creative Apple serwis oferuje profesjonalny serwis telefonów firmy Apple. Posiadamy wiedzę i doświadczenie potrzebne do skutecznej naprawy i konserwacji iPhone'ów, iPadów i innych urządzeń firmy Apple.
+                    </p>
+                    <p>
+                        Nasza oferta obejmuje naprawy bieżące, takie jak wymiana uszkodzonych części, naprawa usterek sprzętowych i software'owych, a także konserwację urządzeń, takich jak wymiana baterii czy czyszczenie. Nasz zespół specjalistów jest gotowy pomóc Ci w każdej sytuacji, w której Twój telefon firmy Apple wymaga naprawy lub konserwacji. Oferujemy szybką i skuteczną obsługę, a także konkurencyjne ceny.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pb-large lines-left">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="color-accent uppercase">
+                Oblicz koszt naprawy
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur. Imperdiet odio dictum risus commodo nec faucibus. A hac diam tellus integer pharetra ut.
+            </p>
+        </div>
+        <div class="row pt-small justify-content-center">
+            {% for post in collections.services_iphone %}
+                <div class="col-6 col-md-2">
+                    <a href="{{ post.url }}" title="Przejdź">
+                        <div class="services-card text-center">
+                            <img src="{{ post.data.thumbnail }}" class="mb-3" alt="{{ post.data.title }}"/>
+                            <h3 class="h5 uppercase">{{ post.data.title }}</h3>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% include "sections/banner-contact.njk" %}

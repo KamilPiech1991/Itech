@@ -1,0 +1,132 @@
+.section-hero {
+  position: relative;
+  z-index: 1;
+}
+
+.section-hero .image-wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.hero-bg::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.3;
+  z-index: 9;
+  pointer-events: none;
+}
+
+.hero-bg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h1 {
+  text-transform: uppercase;
+  color: var(--color-light-1);
+}
+
+.hero-content p {
+  font-size: 24px;
+  color: var(--color-light-2);
+}
+
+.hero-form-wrap {
+  text-align: center;
+}
+
+.hero-form input[type=tel] {
+  width: 100%;
+  padding: 1em 5em 1em 3em;
+  margin-bottom: 1em;
+}
+
+.hero-form-wrap .button {
+  width: 100%;
+}
+
+.hero-form input {
+  border: none !important;
+}
+
+.hero-contact-wrap {
+  margin-top: 90px;
+}
+
+.hero-contact-wrap span,
+.hero-contact-wrap p {
+  color: #fff;
+}
+
+.hero-card-item {
+  margin-bottom: 1.2em;
+  padding: 1.2em 0.5em;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  opacity: 0.8;
+}
+
+.hero-card-item:hover {
+  opacity: 1;
+}
+
+.hero-card-item span {
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
+  color: #fff;
+}
+
+@media (min-width: 767px) {
+  .hero-content {
+    text-align: left;
+  }
+  .hero-form-wrap {
+    display: flex;
+    text-align: left;
+  }
+  .hero-form input[type=tel] {
+    width: auto;
+    padding: 1em 5em 1em 3em;
+    margin-right: -3em;
+    margin-bottom: 0;
+  }
+  .hero-form-wrap .button {
+    width: auto;
+  }
+  .hero-card-item {
+    margin-bottom: 2.2em;
+    padding: 1.2em 3.5em;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    border-radius: 100px;
+  }
+  .hero-card-item svg {
+    margin-right: 1em;
+    width: 80px;
+  }
+}

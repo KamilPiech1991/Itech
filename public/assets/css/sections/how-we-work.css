@@ -1,0 +1,101 @@
+.how-we-work-slider button {
+  border: none;
+  outline: none;
+  background: transparent;
+  text-align: left;
+  pointer-events: none;
+}
+
+.how-we-work-slider .glide__bullets {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.how-we-work-slider .glide__bullets::before {
+  position: absolute;
+  content: "";
+  top: 1em;
+  height: 1px;
+  bottom: auto;
+  left: 0;
+  width: 100%;
+  background: var(--color-accent-1);
+}
+
+.how-we-work-slider .glide__bullet {
+  position: relative;
+}
+
+.how-we-work-slider .glide__bullet:nth-child(1)::before {
+  content: "1";
+}
+
+.how-we-work-slider .glide__bullet:nth-child(2)::before {
+  content: "2";
+}
+
+.how-we-work-slider .glide__bullet:nth-child(3)::before {
+  content: "3";
+}
+
+.how-we-work-slider .glide__bullets::before {
+  top: 1em;
+  bottom: 2.2em;
+  left: 1.15em;
+  height: 2px;
+  width: 100%;
+}
+
+.how-we-work-slider .glide__bullet::before {
+  position: absolute;
+  content: "";
+  top: 40%;
+  left: 0;
+  width: 1.3em;
+  height: 1.3em;
+  border-radius: 50%;
+  border: 2px solid var(--color-accent-1);
+  background: var(--color-light-1);
+  color: var(--color-dark-1);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+  transition: 0.1s ease-in-out;
+}
+
+.how-we-work-slider .glide__bullet--active::before {
+  background: var(--color-accent-1);
+  color: var(--color-light-1);
+}
+
+.how-we-work-slider .glide__bullet__title {
+  transition: 0.1s ease-in-out;
+}
+
+.how-we-work-slider .glide__bullet--active .glide__bullet__title {
+  color: var(--color-accent-1);
+}
+
+@media (min-width: 767px) {
+  .how-we-work-slider .glide__bullets {
+    display: block;
+  }
+  .how-we-work-slider .glide__bullets {
+    padding-left: 4em;
+  }
+  .how-we-work-slider .glide__bullets::before {
+    height: auto;
+    left: 3em;
+    width: 2px;
+  }
+  .how-we-work-slider .glide__bullet::before {
+    top: 40%;
+    left: -3em;
+  }
+  .how-we-work-slider .glide__slide img {
+    aspect-ratio: 20/8;
+    object-fit: cover;
+  }
+}

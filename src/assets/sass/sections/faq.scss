@@ -1,0 +1,57 @@
+.item {
+    margin-top: 2em;
+    border: 2px solid var(--color-accent-1);
+    border-radius: 12px;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding: 1.5em 2em 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    }
+    .accordion .title {
+    padding-right: 3.2em;
+    transition: .1s ease-in-out
+    }
+    
+    .icon {
+        position: absolute;
+        top: 55%;
+        right: 2em;
+        width: 18px;
+        height: 3px;
+        background: var(--color-accent-1)
+    }
+    
+    .icon::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        width: 18px;
+        height: 3px;
+        background: var(--color-accent-1);
+        border-radius: 50%;
+        transform: rotate(90deg);
+        transition: .3s cubic-bezier(0.215, 0.610, 0.355, 1)
+    }
+    
+    .accordion.open .icon::before {
+        transform: rotate(0)
+    }
+    
+    .panel {
+    padding: 0 2em 1em;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all .6s ease-in-out;
+    }
+    
+    .panel p {
+    margin: 1em 0
+    }
+    

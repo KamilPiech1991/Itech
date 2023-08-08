@@ -1,0 +1,38 @@
+.about-slider .glide__slide img {
+    aspect-ratio: 12/10;
+    object-fit: cover;
+}
+
+.about-icon-wrap {
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about-icon-wrap p {
+    font-size: 12px;
+}
+
+.about-slider .glide__bullets {
+    text-align: center
+}
+
+.about-slider .glide__bullet {
+    background-color: var(--color-accent-1);
+    width: 16px;
+    height: 16px;
+    border: none;
+    border-radius: 12px;
+    transition: .1s ease-in-out;
+    cursor: pointer
+}
+
+.about-slider .glide__bullet--active {
+    width: 42px
+}
+
+@media(min-width:767px) {
+    .about-icon-wrap p {
+        font-size: 16px
+    }
+}

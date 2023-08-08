@@ -1,0 +1,62 @@
+@charset "UTF-8";
+.section-reviews {
+  background: url("/assets/img/sections/reviews/reviews.jpg");
+  background-size: cover;
+  background-position: right;
+}
+
+.section-reviews .glide__arrows {
+  display: flex;
+}
+
+.section-reviews .glide__arrow {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.section-reviews .glide__bullets {
+  margin: 0 0.4em 0.65em;
+  text-align: center;
+}
+
+.section-reviews .glide__bullet {
+  margin: 0 0.35em;
+  background-color: var(--color-light-1);
+  width: 16px;
+  height: 16px;
+  border: none;
+  border-radius: 12px;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.section-reviews .glide__bullet--active {
+  width: 42px;
+}
+
+.review-card {
+  position: relative;
+  padding: 1em 2em 2em;
+  background-color: var(--color-light-1);
+  border-radius: 20px;
+}
+
+.review-card::before {
+  position: absolute;
+  content: " ‘‘ ";
+  top: 0;
+  right: 0.1em;
+  font-size: 200px;
+  line-height: 1;
+  font-weight: 800;
+  color: var(--color-accent-1);
+  opacity: 0.2;
+  z-index: 0;
+}
+
+@media (min-width: 767px) {
+  .reviews-slider .glide__slide:nth-child(odd) {
+    margin-top: 5em;
+  }
+}

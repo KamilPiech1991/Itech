@@ -1,0 +1,141 @@
+{% include 'partials/head.njk' %}
+{% include 'partials/header.njk' %}
+
+<section class="pt-medium pb-large">
+    <div class="container">
+
+        <div class="row">
+            <div class="offset-md-2 col-md-8">
+                <div class="single-post-title-wrap">
+                    <div class="breacrumbs">
+                        <a href="/">
+                                Główna
+                            </a>
+                        <span>
+                                | 
+                            </span>
+                        <a href="/naprawa">
+                                Naprawa
+                            </a>
+                        <span>
+                                |
+                            </span>
+                        <span>
+                            {{ title }}
+                        </span>
+                    </div>
+                    <h1 class="single-post-title mt-4 mb-5">
+                        Naprawa {{ title }}
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row gx-5 service-item">
+            <div class="col-3 offset-md-1 col-md-1">
+                <img src="/assets/img/services/ipad2.png">
+            </div>
+            <div class="col-9 col-md-3">
+                <h3 class="h5">
+                    Naprawa oprogramowania {{ title }}
+                </h3>
+                <p class="mt-4">
+                    Cena: {{ naprawa_oprogramowania_w_tablecie }} zł
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="mt-4">
+                   Opis
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="mt-4">
+                    <a href="/zglos.php" class="button">Zamów</a>
+                </p>
+            </div>
+
+        </div>
+        
+        <div class="row gx-5 service-item">
+            <div class="col-3 offset-md-1 col-md-1">
+                <img src="/assets/img/services/ipad2.png">
+            </div>
+            <div class="col-9 col-md-3">
+                <h3 class="h5">
+                    Usunięcie blokady FRP {{ title }}
+                </h3>
+                <p class="mt-4">
+                    Cena: {{ usuniecie_blokady_frp_konto_google }} zł
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="mt-4">
+                    Opis
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="mt-4">
+                    <a href="/zglos.php" class="button">Zamów</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row gx-5 service-item">
+            <div class="col-3 offset-md-1 col-md-1">
+                <img src="/assets/img/services/ipad2.png">
+            </div>
+            <div class="col-9 col-md-3">
+                <h3 class="h5">
+                    Wymiana złącza ładowania {{ title }}
+                </h3>
+                <p class="mt-4">
+                    Cena: {{ wymiana_zlacza_ladowania }} zł
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="mt-4">
+                  Opis
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="mt-4">
+                    <a href="/zglos.php" class="button">Zamów</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row gx-5 service-item">
+            <div class="col-3 offset-md-1 col-md-1">
+                <img src="/assets/img/services/ipad2.png">
+            </div>
+            <div class="col-9 col-md-3">
+                <h3 class="h5">
+                    Wymiana ekranu {{ title }}
+                </h3>
+                <p class="mt-4">
+                    Cena: {{ zbity_ekran_w_tablecie }} zł
+                </p>
+            </div>
+            <div class="col-md-5">
+                <p class="mt-4">
+                  Opis
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="mt-4">
+                    <a href="/zglos.php" class="button">Zamów</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="offset-md-2 col-md-8">
+                {{ content | safe }}
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{% include "partials/foot.njk" %}
+{% include "partials/footer.njk" %}

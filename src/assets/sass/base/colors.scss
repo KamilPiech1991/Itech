@@ -1,0 +1,16 @@
+:root {
+    --color-accent-1: #4585C8;
+    --color-accent-2: #C84545;
+    --color-light-1: #fff;
+    --color-light-2: rgb(244, 244, 244);
+    --color-dark-1: #00131b;
+    --color-dark-2: #222;
+}
+
+.color-accent {
+    color: var(--color-accent-1)
+}
+
+.color-light {
+    color: var(--color-light-1)
+}

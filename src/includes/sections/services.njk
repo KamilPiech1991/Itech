@@ -1,0 +1,91 @@
+<section class="pt-small pb-medium lines-left">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="color-accent uppercase">
+                Oblicz koszt naprawy
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur. Imperdiet odio dictum risus commodo nec faucibus. A hac diam tellus integer pharetra ut.
+            </p>
+        </div>
+            <div id="wrapper">
+                <div class="content">
+                    <!-- Tab links -->
+                    <div class="tabs mb-5">
+                        <button class="tablinks active" data-item="item-1" aria-label="Tab button 1">
+                            <p>Iphone</p>
+                        </button>
+                        <button class="tablinks" data-item="item-2" aria-label="Tab button 2">
+                            <p>MackBook</p>
+                        </button>
+                        <button class="tablinks" data-item="item-3" aria-label="Tab button 3">
+                            <p>Ipad</p>
+                        </button>
+                        <button class="tablinks" data-item="item-4" aria-label="Tab button 4">
+                            <p>Watch</p>
+                        </button>
+                    </div>
+
+                    <!-- Tab content -->
+                    <div class="wrapper_tabcontent">
+                        <div id="item-1" class="tabcontent active">
+                            <div class="row justify-content-center">
+                                {% for post in collections.services_iphone %}
+                                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                                        <a href="{{ post.url }}" title="Przejdź">
+                                            <div class="services-card text-center">
+                                                <img src="{{ post.data.thumbnail }}" class="mb-3" alt="{{ post.data.title }}"/>
+                                                <h3 class="h5 uppercase">{{ post.data.title }}</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div id="item-2" class="tabcontent">
+                            <div class="row justify-content-center">
+                                {% for post in collections.services_mackbook %}
+                                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                                        <a href="{{ post.url }}" title="Przejdź">
+                                            <div class="services-card text-center">
+                                                <img src="{{ post.data.thumbnail }}" class="mb-3" alt="{{ post.data.title }}"/>
+                                                <h3 class="h5 uppercase">{{ post.data.title }}</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div id="item-3" class="tabcontent">
+                            <div class="row justify-content-center">
+                                {% for post in collections.services_ipad %}
+                                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                                        <a href="{{ post.url }}" title="Przejdź">
+                                            <div class="services-card text-center">
+                                                <img src="{{ post.data.thumbnail }}" class="mb-3" alt="{{ post.data.title }}"/>
+                                                <h3 class="h5 uppercase">{{ post.data.title }}</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div id="item-4" class="tabcontent">
+                            <div class="row justify-content-center">
+                                {% for post in collections.services_watch %}
+                                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                                        <a href="{{ post.url }}" title="Przejdź">
+                                            <div class="services-card text-center">
+                                                <img src="{{ post.data.thumbnail }}" class="mb-3" alt="{{ post.data.title }}"/>
+                                                <h3 class="h5 uppercase">{{ post.data.title }}</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>

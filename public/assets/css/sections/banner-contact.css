@@ -1,0 +1,15 @@
+.section-banner-contact {
+  height: 650px;
+  background: url("/assets/img/sections/banner-contact/banner-bg-mobile.png");
+  background-size: cover;
+  background-position: right;
+}
+
+@media (min-width: 767px) {
+  .section-banner-contact {
+    height: auto;
+    background: url("/assets/img/sections/banner-contact/banner-bg.png");
+    background-size: cover;
+    background-position: left;
+  }
+}
