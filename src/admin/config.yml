@@ -44,8 +44,6 @@ collections:
       - { label: "Wymiana mikrofonu", name: "wymiana_mikrofonu", widget: "string" }
       - { label: "Wymiana głośnika rozmów", name: "wymiana_glosnika_rozmow", widget: "string" }
       - { label: "Wymiana głośnika audio", name: "wymiana_glosnika_audio", widget: "string" }
-      - { label: "Layout", name: "layout", widget: string, default: "layouts/service_iphone.njk" }
-      - { label: "Body", name: "body", widget: "markdown" }
 
 
 # Ipad
@@ -63,8 +61,7 @@ collections:
       - { label: "Usunięcie blokady FRP konto Google", name: "usuniecie_blokady_frp_konto_google", widget: "string" }
       - { label: "Wymiana złącza ładowania", name: "wymiana_zlacza_ladowania", widget: "string" }
       - { label: "Zbity ekran w tablecie", name: "zbity_ekran_w_tablecie", widget: "string" }
-      - { label: "Layout", name: "layout", widget: string, default: "layouts/service_ipad.njk" }
-      - { label: "Body", name: "body", widget: "markdown" }
+
 
 
 # Mackbook
@@ -85,8 +82,6 @@ collections:
       - { label: "Wymiana touchPad", name: "wymiana_touch_pad", widget: "string" }
       - { label: "Wymiana klawiatury", name: "wymiana_klawiatury", widget: "string" }
       - { label: "Wymiana układu graficznego", name: "wymiana_ukladu_graficznego", widget: "string" }
-      - { label: "Layout", name: "layout", widget: string, default: "layouts/service_mackbook.njk" }
-      - { label: "Body", name: "body", widget: "markdown" }
 
 
 # Watch
@@ -124,6 +119,4 @@ collections:
       - { label: "Wymiana mikrofonu", name: "wymiana_mikrofonu", widget: "string" }
       - { label: "Wymiana głośnika rozmów", name: "wymiana_glosnika_rozmow", widget: "string" }
       - { label: "Wymiana głośnika audio", name: "wymiana_glosnika_audio", widget: "string" }
-      - { label: "Layout", name: "layout", widget: string, default: "layouts/service_watch.njk" }
-      - { label: "Body", name: "body", widget: "markdown" }
 

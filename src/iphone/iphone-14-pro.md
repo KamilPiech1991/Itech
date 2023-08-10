@@ -20,7 +20,7 @@ naprawa_uszkodzonych_sciezek: zapytaj
 naprawa_wibracji: zapytaj
 naprawa_zalania: zapytaj
 wymiana_baterii: zapytaj
-wymiana_glosnika_audio: zapytaj
+wymiana_glosnika_audio: zapytaj 
 wymiana_glosnika_rozmow: zapytaj
 
 wymiana_mikrofonu: zapytaj
@@ -34,7 +34,7 @@ wymiana_tylnego_aparatu: zapytaj
 
 wymiana_tylnej_klapki: zapytaj
 
-wymiana_wyswietlacza: 1zapytaj
+wymiana_wyswietlacza: zapytaj
 wymiana_zlacza_ladowania: zapytaj
 ---
 
