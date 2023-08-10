@@ -18,7 +18,7 @@ local_backend: true
 collections:
 # Iphone
   - label: "Iphone" 
-    name: "iphone"
+    name: "services_iphone"
     folder: "src/iphone" # Where the new posts should be saved to
     create: true # This allows you to create new instances in the CMS
     editor:
@@ -55,18 +55,78 @@ collections:
 
 
 # Ipad
-  - label: "Ipad" 
-    name: "ipad"
+  - label: "Ipad"   
+    name: "services_ipad"
     folder: "src/ipad" # Where the new posts should be saved to
     create: true # This allows you to create new instances in the CMS
     editor:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
-
-
+      - { label: "Zdjęcie modelu", name: "thumbnail", widget: "image" }
+      - { label: "Naprawa oprogramowania w tablecie", name: "naprawa_oprogramowania_w_tablecie", widget: "string" }
+      - { label: "Usunięcie blokady FRP konto Google", name: "usuniecie_blokady_frp_konto_google", widget: "string" }
+      - { label: "Wymiana złącza ładowania", name: "wymiana_zlacza_ladowania", widget: "string" }
+      - { label: "Zbity ekran w tablecie", name: "zbity_ekran_w_tablecie", widget: "string" }
       - { label: "Layout", name: "layout", widget: string, default: "layouts/service_ipad.njk" }
       - { label: "Body", name: "body", widget: "markdown" }
 
 
+# Mackbook
+  - label: "Mackbook"   
+    name: "services_mackbook"
+    folder: "src/mackbook" # Where the new posts should be saved to
+    create: true # This allows you to create new instances in the CMS
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Zdjęcie modelu", name: "thumbnail", widget: "image" }
+      - { label: "Instalacja systemu", name: "instalacja_systemu", widget: "string" }
+      - { label: "Wymiana dysku twardego", name: "wymiana_dysku_twardego", widget: "string" }
+      - { label: "Wymiana matrycy", name: "wymiana_matrycy", widget: "string" }
+      - { label: "Wymiana obudowy", name: "wymiana_obudowy", widget: "string" }
+      - { label: "Wymiana touchPad", name: "wymiana_touch_pad", widget: "string" }
+      - { label: "Wymiana klawiatury", name: "wymiana_klawiatury", widget: "string" }
+      - { label: "Wymiana układu graficznego", name: "wymiana_ukladu_graficznego", widget: "string" }
+      - { label: "Layout", name: "layout", widget: string, default: "layouts/service_mackbook.njk" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+
+# Watch
+  - label: "Watch"   
+    name: "services_watch"
+    folder: "src/watch" # Where the new posts should be saved to
+    create: true # This allows you to create new instances in the CMS
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Zdjęcie modelu", name: "thumbnail", widget: "image" }
+      - { label: "Naprawa braku obrazu", name: "naprawa_braku_obrazu", widget: "string" }
+      - { label: "Naprawa uszkodzonych ścieżek", name: "naprawa_uszkodzonych_sciezek", widget: "string" }
+      - { label: "Naprawa układu audio", name: "naprawa_ukladu_audio", widget: "string" }
+      - { label: "Naprawa Wi Fi Bluetooth", name: "naprawa_wifi_bluetooth", widget: "string" }
+      - { label: "Naprawa układu GSM brak sieci", name: "naprawa_ukladu_gsm_brak_sieci", widget: "string" }
+      - { label: "Naprawa oprogramowania", name: "naprawa_oprogramowania", widget: "string" }
+      - { label: "Naprawa uszkodzonych gniazd PPC", name: "naprawa_uszkodzonych_gniazd_ppc", widget: "string" }
+      - { label: "Naprawa pamięci Nan", name: "naprawa_pamieci_nan", widget: "string" }
+      - { label: "Naprawa układu podświetlania", name: "naprawa_ukladu_podswietlania", widget: "string" }
+      - { label: "Naprawa układu dotyku", name: "naprawa_ukladu_dotyku", widget: "string" }
+      - { label: "Naprawa układu ładowania", name: "naprawa_ukladu_ladowania", widget: "string" }
+      - { label: "Naprawa zalania", name: "naprawa_zalania", widget: "string" }
+      - { label: "Wymiana przedniego aparatu", name: "wymiana_przedniego_aparatu", widget: "string" }
+      - { label: "Wymiana przycisków głośności", name: "wymiana_przyciskow_glosnosci", widget: "string" }
+      - { label: "Wymiana tylnego aparatu", name: "wymiana_tylnego_aparatu", widget: "string" }
+      - { label: "Wymiana wyswietlacza", name: "wymiana_wyswietlacza", widget: "string" }
+      - { label: "Wymiana złącza ładowania", name: "wymiana_zlacza_ladowania", widget: "string" }
+      - { label: "Wymiana baterii", name: "wymiana_baterii", widget: "string" }
+      - { label: "Wymiana obudowy", name: "wymiana_obudowy", widget: "string" }
+      - { label: "Wymiana przycisku home", name: "wymiana_przycisku_home", widget: "string" }
+      - { label: "Naprawa wibracji", name: "naprawa_wibracji", widget: "string" }
+      - { label: "Wymiana mikrofonu", name: "wymiana_mikrofonu", widget: "string" }
+      - { label: "Wymiana głośnika rozmów", name: "wymiana_glosnika_rozmow", widget: "string" }
+      - { label: "Wymiana głośnika audio", name: "wymiana_glosnika_audio", widget: "string" }
+      - { label: "Layout", name: "layout", widget: string, default: "layouts/service_watch.njk" }
+      - { label: "Body", name: "body", widget: "markdown" }
 

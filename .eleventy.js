@@ -12,7 +12,6 @@ module.exports = function(eleventyConfig) {
           }
         });
 
-
     eleventyConfig.addPassthroughCopy("./src/static/css");
     eleventyConfig.addPassthroughCopy("./src/assets/js");
     eleventyConfig.addPassthroughCopy("./src/assets/img");
@@ -89,7 +88,7 @@ module.exports = function(eleventyConfig) {
     // Date
     eleventyConfig.addFilter('dateDisplay', require('./src/filters/date-display.js'));
     eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
-    
+  
 
     return {
       dir: {
