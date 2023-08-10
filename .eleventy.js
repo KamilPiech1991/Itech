@@ -16,7 +16,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/assets/js");
     eleventyConfig.addPassthroughCopy("./src/assets/img");
     eleventyConfig.addPassthroughCopy("./src/assets/font");
-    eleventyConfig.addPassthroughCopy("./src/assets/admin");
+    eleventyConfig.addPassthroughCopy("./src/admin");
     eleventyConfig.addWatchTarget("./src/assets/sass");
 
     eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
