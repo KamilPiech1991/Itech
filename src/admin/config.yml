@@ -21,7 +21,7 @@ collections:
       preview: false
     fields:
       - { label: "Tytuł", name: "title", widget: "string", required: false }
-      - { label: "Zdjęcie modelu", name: "thumbnail", widget: "image" }
+      - { label: "Zdjęcie modelu | Wymiary 364 x 508", name: "thumbnail", widget: "image" }
       - { label: "Naprawa braku obrazu", name: "naprawa_braku_obrazu", widget: "string", required: false }
       - { label: "Naprawa uszkodzonych ścieżek", name: "naprawa_uszkodzonych_sciezek", widget: "string", required: false }
       - { label: "Naprawa układu audio", name: "naprawa_ukladu_audio", widget: "string", required: false }
