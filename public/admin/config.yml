@@ -5,7 +5,6 @@ backend:
 
 # Add the route to your images, so Netlify CMS knows where to save uploads to.
 media_folder: "src/assets/img"
-public_folder: "/assets/img"
 
 # Add your collections. Here's an example of multiple collections: 
 collections:

@@ -89,6 +89,15 @@ module.exports = function(eleventyConfig) {
       return `<div class="image-wrapper"><picture> ${source} ${img} </picture></div>`;
     });
 
+    // Dodaj filtr dla prefiksu "zł"
+      eleventyConfig.addFilter("addPrefix", function(value) {
+    // Sprawdź, czy wartość jest liczbą
+        if (typeof value === 'number') {
+            return `${value} zł`;
+        }
+        return value;
+    });
+
     // Date
     eleventyConfig.addFilter('dateDisplay', require('./src/filters/date-display.js'));
     eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
