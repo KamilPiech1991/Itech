@@ -20,16 +20,16 @@ description: Opis
                     <!-- Tab links -->
                     <div class="tabs mb-5">
                         <button class="tablinks active" data-item="item-1" aria-label="Tab button 1">
-                            <p>Iphone</p>
+                            <p>Komputer</p>
                         </button>
                         <button class="tablinks" data-item="item-2" aria-label="Tab button 2">
-                            <p>MackBook</p>
+                            <p>Laptop</p>
                         </button>
                         <button class="tablinks" data-item="item-3" aria-label="Tab button 3">
-                            <p>Ipad</p>
+                            <p>Tablet</p>
                         </button>
                         <button class="tablinks" data-item="item-4" aria-label="Tab button 4">
-                            <p>Watch</p>
+                            <p>Telefon</p>
                         </button>
                     </div>
 
@@ -37,7 +37,7 @@ description: Opis
                     <div class="wrapper_tabcontent">
                         <div id="item-1" class="tabcontent active">
                             <div class="row justify-content-center">
-                                {% for post in collections.services_iphone %}
+                                {% for post in collections.services_computer %}
                                     <div class="col-6 col-md-4 col-lg-3 col-xl-2">
                                         <a href="{{ post.url }}" title="Przejdź">
                                             <div class="services-card text-center">
@@ -51,7 +51,7 @@ description: Opis
                         </div>
                         <div id="item-2" class="tabcontent">
                             <div class="row justify-content-center">
-                                {% for post in collections.services_mackbook %}
+                                {% for post in collections.services_laptop %}
                                     <div class="col-6 col-md-4 col-lg-3 col-xl-2">
                                         <a href="{{ post.url }}" title="Przejdź">
                                             <div class="services-card text-center">
@@ -65,7 +65,7 @@ description: Opis
                         </div>
                         <div id="item-3" class="tabcontent">
                             <div class="row justify-content-center">
-                                {% for post in collections.services_ipad %}
+                                {% for post in collections.services_tablet %}
                                     <div class="col-6 col-md-4 col-lg-3 col-xl-2">
                                         <a href="{{ post.url }}" title="Przejdź">
                                             <div class="services-card text-center">
@@ -79,7 +79,7 @@ description: Opis
                         </div>
                         <div id="item-4" class="tabcontent">
                             <div class="row justify-content-center">
-                                {% for post in collections.services_watch %}
+                                {% for post in collections.services_phone %}
                                     <div class="col-6 col-md-4 col-lg-3 col-xl-2">
                                         <a href="{{ post.url }}" title="Przejdź">
                                             <div class="services-card text-center">

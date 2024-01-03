@@ -34,20 +34,20 @@ module.exports = function(eleventyConfig) {
       return collectionApi.getFilteredByGlob('src/services/**/*.md').reverse();
     });
 
-    eleventyConfig.addCollection('services_iphone', function(collectionApi) {
-      return collectionApi.getFilteredByGlob('src/iphone/**/*.md').reverse();
+    eleventyConfig.addCollection('services_computer', function(collectionApi) {
+      return collectionApi.getFilteredByGlob('src/service_computer/**/*.md').reverse();
     });
 
-    eleventyConfig.addCollection('services_mackbook', function(collectionApi) {
-      return collectionApi.getFilteredByGlob('src/mackbook/**/*.md').reverse();
+    eleventyConfig.addCollection('services_tablet', function(collectionApi) {
+      return collectionApi.getFilteredByGlob('src/service_tablet/**/*.md').reverse();
     });
 
-    eleventyConfig.addCollection('services_ipad', function(collectionApi) {
-      return collectionApi.getFilteredByGlob('src/ipad/**/*.md').reverse();
+    eleventyConfig.addCollection('services_phone', function(collectionApi) {
+      return collectionApi.getFilteredByGlob('src/service_phone/**/*.md').reverse();
     });
 
-    eleventyConfig.addCollection('services_watch', function(collectionApi) {
-      return collectionApi.getFilteredByGlob('src/watch/**/*.md').reverse();
+    eleventyConfig.addCollection('services_laptop', function(collectionApi) {
+      return collectionApi.getFilteredByGlob('src/service_laptop/**/*.md').reverse();
     });
 
     eleventyConfig.addNunjucksAsyncShortcode('Image', async (src, alt) => {
