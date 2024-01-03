@@ -34,10 +34,10 @@ description: Opis
                     <div class="glide__track" data-glide-el="track">
      <ul class="glide__slides">
                             <li class="glide__slide">
-                                {% Image "src/assets/img/sections/about/itech-4.jpg", "ITech - Serwis Apple Otwock" %}
+                                {% Image "src/assets/img/services/telefon.png", "ITech - Serwis Apple Otwock" %}
                             </li>
                             <li class="glide__slide">
-                                {% Image "src/assets/img/sections/about/itech-5.jpg", "ITech - Serwis Apple Otwock" %}
+                                {% Image "src/assets/img/services/telefon-2.png", "ITech - Serwis Apple Otwock" %}
                             </li>
                             <li class="glide__slide">
                                 {% Image "src/assets/img/sections/about/itech-3.jpg", "ITech - Serwis Apple Otwock" %}
@@ -88,13 +88,16 @@ description: Opis
                 Lorem ipsum dolor sit amet consectetur. Imperdiet odio dictum risus commodo nec faucibus. A hac diam tellus integer pharetra ut.
             </p>
         </div>
-        <div class="col-md-8 mx-auto">
+        <div class="col-md-12 mx-auto">
             {% for post in collections.services_phone %}
-            <div class="row pt-small">
+            <div class="row gx-5 align-items-center pt-small">
                 <div class="col-12 col-md-6">
                         <div class="services-card">
                             <h3 class="h5 uppercase">{{ post.data.title }}</h3>
                             <p>{{ post.data.description }}</p>
+                            <a href="#" class="button mt-4">
+                                Zamów naprawę
+                            </a>
                         </div>
                 </div>
                 <div class="col-12 col-md-6">

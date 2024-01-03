@@ -1,0 +1,54 @@
+--- 
+layout: 'layouts/base.njk'
+title: Oferta sprzedaży
+description: Opis
+---
+
+<section class="section-contact pt-small pb-large">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="single-post-title-wrap">
+                    <div class="breacrumbs">
+                        <a href="/">
+                                Główna
+                            </a>
+                        <span>
+                                |
+                            </span>
+                        <span>
+                            {{ title }}
+                        </span>
+                    </div>
+                    <h1 class="single-post-title mt-4 mb-5">
+                        {{ title }}
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+
+        {% for post in collections.products %}
+        <div class="row gx-5 align-items-center pt-small">
+            <div class="col-12 col-md-5">
+                <div class="services-card">
+                    <img src="{{ post.data.thumbnail }}" class="mb-3" alt="{{ post.data.title }}"/>
+                </div>
+            </div>
+            <div class="col-12 col-md-7">
+                <div class="services-card">
+                    <h3 class="h5 uppercase mb-4">{{ post.data.title }}</h3>
+                    <p>{{ post.data.description }}</p>
+                    <a href="#" class="button mt-4">
+                        Zobacz więcej
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+ 
+
+    </div>
+</section>

@@ -1,4 +1,0 @@
-{
-    "layout": "layouts/service.njk",
-    "permalink": "/naprawy/{{ title | slugify }}/"
-}

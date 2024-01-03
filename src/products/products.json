@@ -1,0 +1,4 @@
+{
+    "layout": "layouts/product.njk",
+    "permalink": "/blog/{{ title | slugify }}/"
+} 

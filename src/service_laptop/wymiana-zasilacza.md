@@ -1,5 +1,5 @@
 ---
 title: Wymiana zasilacza
-description: Płyta główna jest najważniejszym elementem komputera, umożliwia komunikację wszystkim pozostałym komponentom i modułom. W laptopie stanowi 80% całej elektroniki. Jako jedni z niewielu serwisów w Warszawie, możemy pochwalić się najnowocześniejszym sprzętem do naprawy płyt głównych.
+description: W życiu każdego laptopa może przyjść taki moment, w którym musi nastąpić wymiana baterii - czy to z powodu uszkodzenia mechanicznego, czy to po prostu dlatego, że bateria (która wszak działa tylko 30 minut przy zwykłym użytkowaniu - a nawet krócej, w zależności od intensywności - a potem bez ładowania za pomocą akumulatora się nie obejdzie) wyczerpuje się.
 thumbnail: /assets/img/services/komp.png
 ---

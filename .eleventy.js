@@ -30,6 +30,11 @@ module.exports = function(eleventyConfig) {
       return collectionApi.getFilteredByGlob('src/blog/**/*.md').reverse();
     });
 
+    eleventyConfig.addCollection('products', function(collectionApi) {
+      return collectionApi.getFilteredByGlob('src/products/**/*.md').reverse();
+    });
+
+
     eleventyConfig.addCollection('services', function(collectionApi) {
       return collectionApi.getFilteredByGlob('src/services/**/*.md').reverse();
     });
