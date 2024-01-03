@@ -121,8 +121,8 @@
 
 .services-card img {
   margin: 0 auto;
-  height: 90px;
-  width: auto;
+  height: auto;
+  width: 100%;
   object-fit: cover;
   object-position: center;
   transition: 0.3s ease-in-out;
@@ -153,8 +153,5 @@
     margin-left: 0;
     margin-right: 0;
     width: auto;
-  }
-  .services-card img {
-    height: 160px;
   }
 }
