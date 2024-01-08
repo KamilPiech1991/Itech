@@ -1,5 +1,5 @@
 ---
 title: Wymiana obudowy
-description: Płyta główna jest najważniejszym elementem komputera, umożliwia komunikację wszystkim pozostałym komponentom i modułom. W laptopie stanowi 80% całej elektroniki. Jako jedni z niewielu serwisów w Warszawie, możemy pochwalić się najnowocześniejszym sprzętem do naprawy płyt głównych.
+description: Poprzez usługę wymiany obudowy komputera, zapewniamy odnowienie wyglądu i ochrony Twojego urządzenia. Nasz zespół dokładnie i precyzyjnie wymieni obudowę, przywracając estetykę i ochronę sprzętu, byś mógł cieszyć się nowym wyglądem swojego komputera.
 thumbnail: /assets/img/services/komp.png
 ---

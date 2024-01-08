@@ -1,5 +1,5 @@
 ---
 title: Wymiana zasilacza
-description: Płyta główna jest najważniejszym elementem komputera, umożliwia komunikację wszystkim pozostałym komponentom i modułom. W laptopie stanowi 80% całej elektroniki. Jako jedni z niewielu serwisów w Warszawie, możemy pochwalić się najnowocześniejszym sprzętem do naprawy płyt głównych.
-thumbnail: /assets/img/services/komp.png
+description: Wymiana zasilacza to kluczowy krok w zapewnieniu stabilności i bezpieczeństwa działania Twojego komputera. Nasz zespół specjalistów gwarantuje szybką i dokładną wymianę zasilacza, przywracając sprzęt do pełnej sprawności i umożliwiając Ci bezpieczne korzystanie z komputera bez obaw o problemy z zasilaniem.
+thumbnail: /assets/img/services/zasilacz.jpg
 ---

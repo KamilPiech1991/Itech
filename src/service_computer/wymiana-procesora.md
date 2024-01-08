@@ -1,5 +1,5 @@
 ---
 title: Wymiana procesora
-description: Płyta główna jest najważniejszym elementem komputera, umożliwia komunikację wszystkim pozostałym komponentom i modułom. W laptopie stanowi 80% całej elektroniki. Jako jedni z niewielu serwisów w Warszawie, możemy pochwalić się najnowocześniejszym sprzętem do naprawy płyt głównych.
+description: Wymiana procesora to szybki sposób na ulepszenie wydajności Twojego komputera. Przeprowadzimy profesjonalną i precyzyjną wymianę procesora, zapewniając Ci możliwość korzystania z nowoczesnych technologii oraz zwiększenia mocy obliczeniowej Twojego komputera.
 thumbnail: /assets/img/services/procesor.png
 ---
