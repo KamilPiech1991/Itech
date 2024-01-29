@@ -29,7 +29,7 @@
                     <!-- Tab content -->
                     <div class="wrapper_tabcontent">
                         <div id="item-1" class="tabcontent active">
-                                {% for post in collections.services_computer %}
+                                {% for post in collections.services_computer.slice(0, 3) %}
                                 <div class="row gx-5 align-items-center pt-small">
                                     <div class="col-12 offset-md-1 col-md-5">
                                             <div class="services-card">
@@ -47,9 +47,12 @@
                                     </div>
                                 </div>
                                 {% endfor %}
+                                <div class="text-center">
+                                <a href="/cennik-napraw/serwis-komputerow/" class="button">Zobacz wszystko</a>
+                                </div>
                         </div>
                         <div id="item-2" class="tabcontent">
-                                {% for post in collections.services_laptop %}
+                                {% for post in collections.services_laptop.slice(0, 3) %}
                                 <div class="row gx-5 align-items-center pt-small">
                                     <div class="col-12 offset-md-1 col-md-5">
                                         <div class="services-card">
@@ -67,9 +70,12 @@
                                     </div>
                                 </div>
                                 {% endfor %}
+                                <div class="text-center">
+                                <a href="/cennik-napraw/serwis-laptopow/" class="button">Zobacz wszystko</a>
+                                </div>
                         </div>
                         <div id="item-3" class="tabcontent">
-                                {% for post in collections.services_tablet %}
+                                {% for post in collections.services_tablet.slice(0, 3) %}
                                 <div class="row gx-5 align-items-center pt-small">
                                     <div class="col-12 offset-md-1 col-md-5">
                                         <div class="services-card">
@@ -87,9 +93,12 @@
                                     </div>
                                 </div>
                                 {% endfor %}
+                                <div class="text-center">
+                                <a href="/cennik-napraw/serwis-tabletow/" class="button">Zobacz wszystko</a>
+                                </div>
                         </div>
                         <div id="item-4" class="tabcontent">
-                                {% for post in collections.services_phone %}
+                                {% for post in collections.services_phone.slice(0, 3) %}
                                 <div class="row gx-5 align-items-center pt-small">
                                     <div class="col-12 offset-md-1 col-md-5">
                                         <a href="{{ post.url }}">
@@ -109,6 +118,10 @@
                                     </div>
                                 </div>
                                 {% endfor %}
+                                <div class="text-center">
+                                    <a href="/cennik-napraw/serwis-telefonow/" class="button">Zobacz wszystko</a>
+                                </div>
+
                         </div>
                     </div>
                 </div>
