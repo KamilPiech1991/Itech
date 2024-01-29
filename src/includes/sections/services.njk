@@ -36,7 +36,7 @@
                                                 <h3 class="h5 uppercase mb-4">{{ post.data.title }}</h3>
                                                 <p>{{ post.data.description }}</p>
                                                 <a href="/kontakt" class="button mt-4">
-                                                    Zamów naprawę
+                                                       Czytaj więcej
                                                 </a>
                                             </div>
                                     </div>
@@ -56,7 +56,7 @@
                                             <h3 class="h5 uppercase mb-4">{{ post.data.title }}</h3>
                                             <p>{{ post.data.description }}</p>
                                             <a href="/kontakt" class="button mt-4">
-                                                Zamów naprawę
+                                                   Czytaj więcej
                                             </a>
                                         </div>
                                     </div>
@@ -76,7 +76,7 @@
                                             <h3 class="h5 uppercase mb-4">{{ post.data.title }}</h3>
                                             <p>{{ post.data.description }}</p>
                                             <a href="/kontakt" class="button mt-4">
-                                                Zamów naprawę
+                                                   Czytaj więcej
                                             </a>
                                         </div>
                                     </div>
@@ -92,13 +92,15 @@
                                 {% for post in collections.services_phone %}
                                 <div class="row gx-5 align-items-center pt-small">
                                     <div class="col-12 offset-md-1 col-md-5">
+                                        <a href="{{ post.url }}">
                                         <div class="services-card">
                                             <h3 class="h5 uppercase mb-4">{{ post.data.title }}</h3>
                                             <p>{{ post.data.description }}</p>
                                             <a href="/kontakt" class="button mt-4">
-                                                Zamów naprawę
+                                                Czytaj więcej
                                             </a>
                                         </div>
+                                        </a>
                                     </div>
                                     <div class="col-12 col-md-6">
                                             <div class="services-card">

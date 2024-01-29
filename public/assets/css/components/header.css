@@ -13,7 +13,8 @@
 }
 
 .header-top {
-  margin-top: 20px;
+  margin-top: 15px;
+  margin-bottom: 28px;
 }
 
 .header-top p,
@@ -22,7 +23,7 @@
 }
 
 .header-bottom {
-  margin-top: 50px;
+  margin-top: 35px;
 }
 
 .header-bottom-nav ul {
