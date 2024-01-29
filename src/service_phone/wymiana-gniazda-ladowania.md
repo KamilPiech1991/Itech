@@ -1,7 +1,7 @@
 ---
 title: Wymiana gniazda ładowania
 description: Posiadacze współczesnych smartfonów mogą napotkać różnorodne wyzwania związane z funkcjonalnością swoich urządzeń. Jednymi z najczęstszych problemów są opóźnione ładowanie telefonu oraz szybkie rozładowywanie baterii
-thumbnail: /assets/img/services/wymiana-szybki-w-telefonie.jpg
+thumbnail: /assets/img/services/wymiana-gniazda-telefon.jpg
 ---
 
 Posiadacze współczesnych smartfonów mogą napotkać różnorodne wyzwania związane z funkcjonalnością swoich urządzeń. Jednymi z najczęstszych problemów są opóźnione ładowanie telefonu oraz szybkie rozładowywanie baterii, co może wskazywać na konieczność wymiany gniazda ładowania w przypadku mechanicznego uszkodzenia. Jakie są potencjalne przyczyny tych problemów i czy naprawa telefonu związana z wymianą gniazda ładowania jest konieczna?

@@ -4473,7 +4473,7 @@ img {
 }
 
 .header-top {
-  margin-top: 15px;
+  margin-top: 8px;
   margin-bottom: 28px;
 }
 
@@ -4884,7 +4884,7 @@ img {
   position: relative;
   padding: 50px;
   width: 85vw;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .modal-close {
@@ -4906,7 +4906,6 @@ textarea {
   width: -moz-available;
   font-family: var(--font-primary);
   font-size: 16px;
-  border: 2px solid var(--color-accent-1);
   border-radius: 22px;
 }
 
@@ -4932,6 +4931,109 @@ label {
   width: -moz-available;
   max-width: -webkit-fill-available;
   margin-bottom: 1em;
+}
+
+.floating-label {
+  position: relative;
+}
+
+.floating-label label,
+.highlight {
+  position: absolute;
+  pointer-events: none;
+}
+
+.floating-input,
+.floating-select {
+  padding: 1.2em;
+  display: block;
+  max-width: 100%;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  background-color: #fcfcfc;
+  border-radius: 10px;
+  border: 2px solid rgba(153, 153, 153, 0.2);
+  font-size: 14px;
+  color: #444;
+}
+
+.floating-input:focus,
+.floating-select:focus {
+  outline: 0;
+  border: 1px solid var(--color-accent-1);
+}
+
+.floating-label label {
+  color: #777;
+  font-size: 14px;
+  font-weight: 400;
+  left: 5px;
+  padding: 0.7em;
+  top: 2em;
+  transform: translateY(-50%);
+  transition: 0.2s;
+  -moz-transition: 0.2s;
+  -webkit-transition: 0.2s;
+}
+
+.floating-input:focus ~ label,
+.floating-input:not(:placeholder-shown) ~ label,
+.floating-select:focus ~ label,
+.floating-select:not([value=""]):valid ~ label {
+  top: 0;
+  padding: 0.2em 0.9em;
+  font-size: 75%;
+  color: var(--color-accent-1);
+  background: #f8f8f8;
+  border-radius: 8px;
+}
+
+.floating-input:focus ~ .bar:after,
+.floating-input:focus ~ .bar:before,
+.floating-select:focus ~ .bar:after,
+.floating-select:focus ~ .bar:before {
+  width: 50%;
+}
+
+.floating-textarea {
+  min-height: 130px;
+  max-height: 260px;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.highlight {
+  height: 50%;
+  width: 100%;
+  top: 15%;
+  left: 0;
+  opacity: 0.5;
+}
+
+form .wa-button {
+  width: auto;
+  display: inline-block;
+  padding: 0.8em 2.3em;
+  background: var(--color-accent-1);
+  color: #fff;
+  border-radius: 28px;
+  cursor: pointer;
+}
+
+.form-accept {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 30px;
+}
+
+.form-accept input {
+  width: auto;
+  transform: translateY(2px);
+}
+
+.form-accept label {
+  display: inline-block;
+  font-size: 13px;
 }
 
 .about-slider .glide__slide img {

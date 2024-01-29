@@ -57,6 +57,39 @@ glideMulti5.mount();
 <script src="/assets/js/main.js"></script>
 <script src="/assets/js/cookieconsent.js"></script>
 <script src="/assets/js/cookieconsent-init.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    function handleSubmit(formId, successMessageId, successMessage) {
+      var form = document.getElementById(formId);
+      var sendFormStatus = document.getElementById(successMessageId);
+      if (form && sendFormStatus) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          sendFormStatus.innerHTML = successMessage; // Ustawia komunikat
+          sendFormStatus.style.display = 'block'; // Pokazuje element
+          var formData = new FormData(form);
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', 'https://www.futurewebstudio.pl/form/forms/' + formId + '.php');
+          xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+              if (xhr.status === 200) {
+                var res = JSON.parse(xhr.responseText);
+                if (res.status === 1) {
+                  form.reset();
+                }
+              } else {
+                sendFormStatus.innerHTML = 'Wystąpił błąd podczas wysyłania formularza.';
+              }
+            }
+          };
+          xhr.send(formData);
+        });
+      }
+    }
+    handleSubmit('contactForm', 'send_contact_form_status', 'Wysłano formularz kontaktowy');
+    handleSubmit('serviceForm', 'send_service_form_status', 'Wysłano formularz serwisowy');
+  });
+</script>
 
 </body>
 </html>

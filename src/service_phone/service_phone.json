@@ -1,4 +1,4 @@
 {
     "layout": "layouts/service.njk",
-    "permalink": "/naprawa/{{ title | slugify }}/"
+    "permalink": "/naprawa-telefonow/{{ title | slugify }}/"
 }

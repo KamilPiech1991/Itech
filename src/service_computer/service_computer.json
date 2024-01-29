@@ -1,0 +1,4 @@
+{
+    "layout": "layouts/service.njk",
+    "permalink": "/naprawa-komputerow/{{ title | slugify }}/"
+}
