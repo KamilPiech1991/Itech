@@ -71,13 +71,15 @@ description: Opis
             {% for post in collections.services_computer %}
             <div class="row gx-5 align-items-center pt-small">
                 <div class="col-12 col-md-6">
+                    <a href="{{ post.url }}">
                         <div class="services-card">
                             <h3 class="h5 uppercase">{{ post.data.title }}</h3>
                             <p>{{ post.data.description }}</p>
-                            <a href="/kontakt" class="button mt-4">
-                                Zamów naprawę
+                            <a href="{{ post.url }}" class="button mt-4">
+                                Zobacz więcej
                             </a>
                         </div>
+                    </a>
                 </div>
                 <div class="col-12 col-md-6">
                         <div class="services-card">
