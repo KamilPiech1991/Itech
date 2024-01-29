@@ -4494,6 +4494,10 @@ img {
   width: 100%;
 }
 
+.header-phone {
+  color: #fff;
+}
+
 #nav {
   width: 100%;
   text-align: end;
