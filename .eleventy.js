@@ -15,6 +15,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/static/css");
     eleventyConfig.addPassthroughCopy("./src/assets/js");
     eleventyConfig.addPassthroughCopy("./src/assets/img");
+    eleventyConfig.addPassthroughCopy("./src/assets/video");
     eleventyConfig.addPassthroughCopy("./src/assets/font");
     eleventyConfig.addPassthroughCopy("./src/admin");
     eleventyConfig.addPassthroughCopy("./src/iphone/img");

@@ -41,6 +41,30 @@ h6, .h6 {
     line-height: 1.5;
 }
 
+.content h1, .content .h1 {
+    font-size: 36px
+}
+
+.content h2, .content .h2 {
+    font-size: 32px
+}
+
+.content h3, .content .h3 {
+    font-size: 28px
+}
+
+.content h4, .content .h4 {
+    font-size: 22px
+}
+
+.content h5, .content .h5 {
+    font-size: 16px
+}
+
+.content h6, .content .h6 {
+    font-size: 12px
+}
+
 p {
     margin-bottom: 2em;
     font-size: 16px;

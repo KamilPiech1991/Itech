@@ -69,6 +69,7 @@ description: Opis
         </div>
         <div class="col-md-12 mx-auto">
             {% for post in collections.services_phone %}
+            {% set index = loop.index + 1 %}
             <div class="row gx-5 align-items-center pt-small">
                 <div class="col-12 col-md-6">
                     <a href="{{ post.url }}">
@@ -81,9 +82,9 @@ description: Opis
                                 </a>
                                 </div>
                                 <div>
-                                <a href="/kontakt" class="button mt-4">
-                                    Zamów naprawę
-                                </a>
+                                    <button data-modal="modal-{{ index }}" class="button mt-4">
+                                        Zamów naprawę
+                                    </button>
                                 </div>
                         </div>
                         </a>
@@ -92,6 +93,72 @@ description: Opis
                         <div class="services-card">
                             <img src="{{ post.data.thumbnail }}" class="mb-3" alt="{{ post.data.title }}"/>
                         </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-{{ index }}">
+                <div class="modal-bg modal-exit"></div>
+                <div class="modal-container">
+                    <h3>{{ post.data.title }}</h3>
+                    <form id="serviceForm"
+                        action="https://www.futurewebstudio.pl/form/forms/serviceForm.php" method="POST">
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="floating-label">
+                                    <input class="floating-input" type="text" name="visitor_name" required
+                                        placeholder=" ">
+                                    <span class="highlight"></span>
+                                    <label>Imię</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="floating-label">
+                                    <input class="floating-input" type="text" name="visitor_surname"
+                                        required placeholder=" ">
+                                    <span class="highlight"></span>
+                                    <label>Nazwisko</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="floating-label">
+                                    <input class="floating-input" type="text" name="visitor_field"
+                                        placeholder=" ">
+                                    <span class="highlight"></span>
+                                    <label>Adres email</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="floating-label">
+                                    <input class="floating-input" type="text" name="visitor_phone" required
+                                        placeholder=" ">
+                                    <span class="highlight"></span>
+                                    <label>Telefon</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="floating-label">
+                                    <textarea class="floating-input floating-textarea" name="visitor_msg"
+                                        placeholder=" "></textarea>
+                                    <span class="highlight"></span>
+                                    <label>Uwagi</label>
+                                </div>
+                            </div>
+                            <div class="relative pt-20">
+                                <div class="form-accept mb-3">
+                                    <input type="checkbox" name="accept-form" id="accept-form"
+                                        placeholder="Wyrażam zgodę na przetwarzanie danych przez ITech ">
+                                    <label for="accept-form">Wyrażam zgodę na przetwarzanie danych przez
+                                        ITech w celu przedstawienia oferty handlowej</label>
+                                </div>
+                                <div id="send_service_form_status" class="absolute top-2"></div>
+                                <input class="wa-button btn-gradient" type="submit" value="Zamów naprawę"
+                                    name="accept-form">
+
+                            </div>
+                        </div>
+
+                    </form>
+                    <span class="modal-close modal-exit">X</span>
                 </div>
             </div>
             {% endfor %}

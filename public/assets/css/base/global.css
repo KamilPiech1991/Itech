@@ -68,7 +68,7 @@ img {
   .lines-left::before,
   .lines-right::before {
     position: absolute;
-    z-index: 999;
+    z-index: -1;
   }
   .lines-left::before {
     content: url("/assets/img/sections/lines-left.png");

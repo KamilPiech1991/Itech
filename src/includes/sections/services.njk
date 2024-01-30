@@ -128,6 +128,7 @@
                     </div>
                     <div id="item-2" class="tabcontent">
                         {% for post in collections.services_laptop.slice(0, 3) %}
+                        {% set index = loop.index + 100 %}
                         <div class="row gx-5 align-items-center pt-small">
                             <div class="col-12 offset-md-1 col-md-5">
                                 <a href="{{ post.url }}">
@@ -222,6 +223,7 @@
                     </div>
                     <div id="item-3" class="tabcontent">
                         {% for post in collections.services_tablet.slice(0, 3) %}
+                        {% set index = loop.index + 200 %}
                         <div class="row gx-5 align-items-center pt-small">
                             <div class="col-12 offset-md-1 col-md-5">
                                 <a href="{{ post.url }}">
@@ -316,6 +318,7 @@
                     </div>
                     <div id="item-4" class="tabcontent">
                         {% for post in collections.services_phone.slice(0, 3) %}
+                        {% set index = loop.index + 300 %}
                         <div class="row gx-5 align-items-center pt-small">
                             <div class="col-12 offset-md-1 col-md-5">
                                 <div class="services-card">
@@ -324,7 +327,7 @@
                                     <a href="{{ post.url }}">
                                         Zobacz więcej
                                     </a><br />
-                                    <button data-modal="modal-{{ index_phone }}" class="button mt-4">
+                                    <button data-modal="modal-{{ index }}" class="button mt-4">
                                         Zamów naprawę
                                     </button>
                                 </div>
@@ -335,7 +338,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="modal" id="modal-{{ index_phone }}">
+                        <div class="modal" id="modal-{{ index }}">
                             <div class="modal-bg modal-exit"></div>
                             <div class="modal-container">
                                 <h3>{{ post.data.title }}</h3>
