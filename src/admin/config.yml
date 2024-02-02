@@ -12,7 +12,7 @@ collections:
 # Iphone
   - label: "Iphone" 
     name: "services_iphone"
-    folder: "src/iphone" # Where the new posts should be saved to
+    folder: "src/service_iphone" # Where the new posts should be saved to
     media_folder: "img/"
     public_folder: "/iphone/img/"
     create: true # This allows you to create new instances in the CMS
@@ -51,7 +51,7 @@ collections:
 # Ipad
   - label: "Ipad"   
     name: "services_ipad"
-    folder: "src/ipad" # Where the new posts should be saved to
+    folder: "src/service_ipad" # Where the new posts should be saved to
     media_folder: "img/"
     public_folder: "/ipad/img/"
     create: true # This allows you to create new instances in the CMS
@@ -71,7 +71,7 @@ collections:
 # Mackbook
   - label: "Mackbook"   
     name: "services_mackbook"
-    folder: "src/mackbook" # Where the new posts should be saved to
+    folder: "src/service_mackbook" # Where the new posts should be saved to
     media_folder: "img/"
     public_folder: "/mackbook/img/"
     create: true # This allows you to create new instances in the CMS
@@ -93,7 +93,7 @@ collections:
 # Watch
   - label: "Watch"   
     name: "services_watch"
-    folder: "src/watch" # Where the new posts should be saved to
+    folder: "src/service_watch" # Where the new posts should be saved to
     media_folder: "img/"
     public_folder: "/watch/img/"
     create: true # This allows you to create new instances in the CMS
