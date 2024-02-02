@@ -14,7 +14,7 @@ collections:
     name: "services_iphone"
     folder: "src/service_iphone" # Where the new posts should be saved to
     media_folder: "img/"
-    public_folder: "/iphone/img/"
+    public_folder: "/service_iphone/img/"
     create: true # This allows you to create new instances in the CMS
     slug: "{{slug}}" 
     editor:
@@ -31,7 +31,7 @@ collections:
     name: "services_ipad"
     folder: "src/service_ipad" # Where the new posts should be saved to
     media_folder: "img/"
-    public_folder: "/ipad/img/"
+    public_folder: "/service_ipad/img/"
     create: true # This allows you to create new instances in the CMS
     slug: "{{slug}}" 
     editor:
@@ -48,7 +48,7 @@ collections:
     name: "services_mackbook"
     folder: "src/service_mackbook" # Where the new posts should be saved to
     media_folder: "img/"
-    public_folder: "/mackbook/img/"
+    public_folder: "/service_mackbook/img/"
     create: true # This allows you to create new instances in the CMS
     slug: "{{slug}}" 
     editor:
@@ -64,7 +64,7 @@ collections:
     name: "services_watch"
     folder: "src/service_watch" # Where the new posts should be saved to
     media_folder: "img/"
-    public_folder: "/watch/img/"
+    public_folder: "/service_watch/img/"
     create: true # This allows you to create new instances in the CMS
     slug: "{{slug}}" 
     editor:
