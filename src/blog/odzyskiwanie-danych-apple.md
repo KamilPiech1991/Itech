@@ -1,6 +1,6 @@
 ---
 title: Odzyskiwanie danych z urządzeń Apple
-description: Odzyskiwanie Danych z urządzeń firmy Apple - nasza firma Itech creative Apple serwis specjalizuje się w odzyskiwaniu danych ze sprzętu firmy Apple
+description: Odzyskiwanie Danych z urządzeń firmy Apple - nasza firma Mobile Szop specjalizuje się w odzyskiwaniu danych ze sprzętu firmy Apple
 thumbnail: /assets/img/blog/odzyskiwanie-danych.jpg
 date: 2023-04-12
 ---

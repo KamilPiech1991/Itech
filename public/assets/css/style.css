@@ -4709,6 +4709,14 @@ img {
   z-index: 1;
 }
 
+.section-hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
 .section-hero .image-wrapper {
   position: absolute;
   height: 100%;
@@ -4732,7 +4740,7 @@ img {
   left: 0;
   right: 0;
   background: #000;
-  opacity: 0.3;
+  opacity: 0.7;
   z-index: 9;
   pointer-events: none;
 }
