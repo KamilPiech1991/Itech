@@ -18,10 +18,10 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/assets/video");
     eleventyConfig.addPassthroughCopy("./src/assets/font");
     eleventyConfig.addPassthroughCopy("./src/admin");
-    eleventyConfig.addPassthroughCopy("./src/iphone/img");
-    eleventyConfig.addPassthroughCopy("./src/ipad/img");
-    eleventyConfig.addPassthroughCopy("./src/mackbook/img");
-    eleventyConfig.addPassthroughCopy("./src/watch/img");
+    eleventyConfig.addPassthroughCopy("./src/service_phone/img");
+    eleventyConfig.addPassthroughCopy("./src/service_tablet/img");
+    eleventyConfig.addPassthroughCopy("./src/service_computer/img");
+    eleventyConfig.addPassthroughCopy("./src/service_laptop/img");
     eleventyConfig.addWatchTarget("./src/assets/sass");
 
     eleventyConfig.addPlugin(eleventyPluginFilesMinifier);

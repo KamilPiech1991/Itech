@@ -57,12 +57,12 @@ glideMulti5.mount();
 <script src="/assets/js/main.js"></script>
 <script src="/assets/js/cookieconsent.js"></script>
 <script src="/assets/js/cookieconsent-init.js"></script>
-<!--
+
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     function handleSubmit(formId, successMessageId, successMessage) {
       var form = document.getElementById(formId);
-      var sendFormStatus = document.getElementById(successMessageId);
+      var sendFormStatus = document.getElementById(successMessageId); 
       if (form && sendFormStatus) {
         form.addEventListener('submit', function(e) {
           e.preventDefault();
@@ -91,6 +91,19 @@ glideMulti5.mount();
     handleSubmit('serviceForm', 'send_service_form_status', 'Wysłano formularz serwisowy');
   });
 </script>
--->
+
+
+<script>
+  if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", user => {
+  if (!user) {
+   window.netlifyIdentity.on("login", () => {
+      document.location.href = "/admin/";
+  });
+  }
+  });
+  }
+</script>
+
 </body>
 </html>

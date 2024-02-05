@@ -3,18 +3,20 @@ backend:
   branch: main
   publish_mode: editorial_workflow
 
+local_backend: true
+
 # Add the route to your images, so Netlify CMS knows where to save uploads to.
 media_folder: "src/assets/img"
 public_foder: "/assets/img"
 
 # Add your collections. Here's an example of multiple collections: 
 collections:
-# Iphone
-  - label: "Iphone" 
-    name: "services_iphone"
-    folder: "src/service_iphone" # Where the new posts should be saved to
+# Telefony
+  - label: "Telefony" 
+    name: "services_phone"
+    folder: "src/service_phone" # Where the new posts should be saved to
     media_folder: "img/"
-    public_folder: "/service_iphone/img/"
+    public_folder: "/service_phone/img/"
     create: true # This allows you to create new instances in the CMS
     slug: "{{slug}}" 
     editor:
@@ -26,12 +28,12 @@ collections:
 
 
 
-# Ipad
-  - label: "Ipad"   
-    name: "services_ipad"
-    folder: "src/service_ipad" # Where the new posts should be saved to
+# Tablet
+  - label: "Tablety"   
+    name: "services_tablet"
+    folder: "src/service_tablet" # Where the new posts should be saved to
     media_folder: "img/"
-    public_folder: "/service_ipad/img/"
+    public_folder: "/service_tablet/img/"
     create: true # This allows you to create new instances in the CMS
     slug: "{{slug}}" 
     editor:
@@ -44,11 +46,11 @@ collections:
 
 
 # Mackbook
-  - label: "Mackbook"   
-    name: "services_mackbook"
-    folder: "src/service_mackbook" # Where the new posts should be saved to
+  - label: "Komputery"   
+    name: "services_computer"
+    folder: "src/service_computer" # Where the new posts should be saved to
     media_folder: "img/"
-    public_folder: "/service_mackbook/img/"
+    public_folder: "/service_computer/img/"
     create: true # This allows you to create new instances in the CMS
     slug: "{{slug}}" 
     editor:
@@ -60,11 +62,11 @@ collections:
 
 
 # Watch
-  - label: "Watch"   
-    name: "services_watch"
-    folder: "src/service_watch" # Where the new posts should be saved to
+  - label: "Laptopy"   
+    name: "services_laptop"
+    folder: "src/service_laptop" # Where the new posts should be saved to
     media_folder: "img/"
-    public_folder: "/service_watch/img/"
+    public_folder: "/service_laptop/img/"
     create: true # This allows you to create new instances in the CMS
     slug: "{{slug}}" 
     editor:

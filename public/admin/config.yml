@@ -3,129 +3,76 @@ backend:
   branch: main
   publish_mode: editorial_workflow
 
+local_backend: true
+
 # Add the route to your images, so Netlify CMS knows where to save uploads to.
 media_folder: "src/assets/img"
-
-local_backend: true
+public_foder: "/assets/img"
 
 # Add your collections. Here's an example of multiple collections: 
 collections:
-# Iphone
-  - label: "Iphone" 
-    name: "services_iphone"
-    folder: "src/iphone" # Where the new posts should be saved to
+# Telefony
+  - label: "Telefony" 
+    name: "services_phone"
+    folder: "src/service_phone" # Where the new posts should be saved to
     media_folder: "img/"
-    public_folder: "/iphone/img/"
+    public_folder: "/service_phone/img/"
     create: true # This allows you to create new instances in the CMS
     slug: "{{slug}}" 
     editor:
       preview: false
     fields:
       - { label: "Tytuł", name: "title", widget: "string", required: false }
-      - { label: "Zdjęcie modelu | Wymiary 364 x 508", name: "thumbnail", widget: "image" }
-      - { label: "Naprawa braku obrazu", name: "naprawa_braku_obrazu", widget: "string", required: false }
-      - { label: "Naprawa uszkodzonych ścieżek", name: "naprawa_uszkodzonych_sciezek", widget: "string", required: false }
-      - { label: "Naprawa układu audio", name: "naprawa_ukladu_audio", widget: "string", required: false }
-      - { label: "Naprawa wifi blutooth", name: "naprawa_wifi_bluetooth", widget: "string", required: false }
-      - { label: "Naprawa układu GSM / brak sieci", name: "naprawa_ukladu_gsm_brak_sieci", widget: "string", required: false }
-      - { label: "Naprawa oprogramowania", name: "naprawa_oprogramowania", widget: "string", required: false }
-      - { label: "Naprawa uszkodzonych gniazd PPC", name: "naprawa_uszkodzonych_gniazd_ppc", widget: "string", required: false }
-      - { label: "Naprawa pamięci Nan", name: "naprawa_pamieci_nan", widget: "string", required: false }
-      - { label: "Naprawa układu podświetlania", name: "naprawa_ukladu_podswietlania", widget: "string", required: false }
-      - { label: "Naprawa układu dotyku", name: "naprawa_ukladu_dotyku", widget: "string", required: false }
-      - { label: "Naprawa układu ładowania", name: "naprawa_ukladu_ladowania", widget: "string", required: false }
-      - { label: "Naprawa zalania", name: "naprawa_zalania", widget: "string", required: false }
-      - { label: "Wymiana przedniego aparatu", name: "wymiana_przedniego_aparatu", widget: "string", required: false }
-      - { label: "Wymiana przycisków głośności", name: "wymiana_przyciskow_glosnosci", widget: "string", required: false }
-      - { label: "Wymiana tylnego aparatu", name: "wymiana_tylnego_aparatu", widget: "string", required: false }
-      - { label: "Wymiana wyświetlacza", name: "wymiana_wyswietlacza", widget: "string", required: false }
-      - { label: "Wymiana złącza ładowania", name: "wymiana_zlacza_ladowania", widget: "string", required: false }
-      - { label: "Wymiana baterii", name: "wymiana_baterii", widget: "string", required: false }
-      - { label: "Wymiana obudowy", name: "wymiana_obudowy", widget: "string", required: false }
-      - { label: "Wymiana przyciku home", name: "wymiana_przycisku_home", widget: "string", required: false }
-      - { label: "Naprawa wibracji", name: "naprawa_wibracji", widget: "string", required: false }
-      - { label: "Wymiana mikrofonu", name: "wymiana_mikrofonu", widget: "string", required: false }
-      - { label: "Wymiana głośnika rozmów", name: "wymiana_glosnika_rozmow", widget: "string", required: false }
-      - { label: "Wymiana głośnika audio", name: "wymiana_glosnika_audio", widget: "string", required: false }
+      - { label: "Zdjęcie", name: "thumbnail", widget: "image" }
+      - { label: "Opis", name: "description", widget: "text" }
 
 
-# Ipad
-  - label: "Ipad"   
-    name: "services_ipad"
-    folder: "src/ipad" # Where the new posts should be saved to
+
+# Tablet
+  - label: "Tablety"   
+    name: "services_tablet"
+    folder: "src/service_tablet" # Where the new posts should be saved to
     media_folder: "img/"
-    public_folder: "/ipad/img/"
+    public_folder: "/service_tablet/img/"
     create: true # This allows you to create new instances in the CMS
     slug: "{{slug}}" 
     editor:
       preview: false
     fields:
-      - { label: "Title", name: "title", widget: "string", required: false }
-      - { label: "Zdjęcie modelu", name: "thumbnail", widget: "image" }
-      - { label: "Naprawa oprogramowania w tablecie", name: "naprawa_oprogramowania_w_tablecie", widget: "string", required: false }
-      - { label: "Usunięcie blokady FRP konto Google", name: "usuniecie_blokady_frp_konto_google", widget: "string", required: false }
-      - { label: "Wymiana złącza ładowania", name: "wymiana_zlacza_ladowania", widget: "string", required: false }
-      - { label: "Zbity ekran w tablecie", name: "zbity_ekran_w_tablecie", widget: "string", required: false }
+      - { label: "Tytuł", name: "title", widget: "string", required: false }
+      - { label: "Zdjęcie", name: "thumbnail", widget: "image" }
+      - { label: "Opis", name: "description", widget: "text" }
 
 
 
 # Mackbook
-  - label: "Mackbook"   
-    name: "services_mackbook"
-    folder: "src/mackbook" # Where the new posts should be saved to
+  - label: "Komputery"   
+    name: "services_computer"
+    folder: "src/service_computer" # Where the new posts should be saved to
     media_folder: "img/"
-    public_folder: "/mackbook/img/"
+    public_folder: "/service_computer/img/"
     create: true # This allows you to create new instances in the CMS
     slug: "{{slug}}" 
     editor:
       preview: false
     fields:
-      - { label: "Title", name: "title", widget: "string", required: false }
-      - { label: "Zdjęcie modelu", name: "thumbnail", widget: "image" }
-      - { label: "Instalacja systemu", name: "instalacja_systemu", widget: "string", required: false }
-      - { label: "Wymiana dysku twardego", name: "wymiana_dysku_twardego", widget: "string", required: false }
-      - { label: "Wymiana matrycy", name: "wymiana_matrycy", widget: "string", required: false }
-      - { label: "Wymiana obudowy", name: "wymiana_obudowy", widget: "string", required: false }
-      - { label: "Wymiana touchPad", name: "wymiana_touch_pad", widget: "string", required: false }
-      - { label: "Wymiana klawiatury", name: "wymiana_klawiatury", widget: "string", required: false }
-      - { label: "Wymiana układu graficznego", name: "wymiana_ukladu_graficznego", widget: "string", required: false }
+      - { label: "Tytuł", name: "title", widget: "string", required: false }
+      - { label: "Zdjęcie", name: "thumbnail", widget: "image" }
+      - { label: "Opis", name: "description", widget: "text" }
 
 
 # Watch
-  - label: "Watch"   
-    name: "services_watch"
-    folder: "src/watch" # Where the new posts should be saved to
+  - label: "Laptopy"   
+    name: "services_laptop"
+    folder: "src/service_laptop" # Where the new posts should be saved to
     media_folder: "img/"
-    public_folder: "/watch/img/"
+    public_folder: "/service_laptop/img/"
     create: true # This allows you to create new instances in the CMS
     slug: "{{slug}}" 
     editor:
       preview: false
     fields:
-      - { label: "Title", name: "title", widget: "string", required: false }
-      - { label: "Zdjęcie modelu", name: "thumbnail", widget: "image" }
-      - { label: "Naprawa braku obrazu", name: "naprawa_braku_obrazu", widget: "string", required: false}
-      - { label: "Naprawa uszkodzonych ścieżek", name: "naprawa_uszkodzonych_sciezek", widget: "string", required: false }
-      - { label: "Naprawa układu audio", name: "naprawa_ukladu_audio", widget: "string", required: false }
-      - { label: "Naprawa Wi Fi Bluetooth", name: "naprawa_wifi_bluetooth", widget: "string", required: false }
-      - { label: "Naprawa układu GSM brak sieci", name: "naprawa_ukladu_gsm_brak_sieci", widget: "string", required: false }
-      - { label: "Naprawa oprogramowania", name: "naprawa_oprogramowania", widget: "string", required: false }
-      - { label: "Naprawa uszkodzonych gniazd PPC", name: "naprawa_uszkodzonych_gniazd_ppc", widget: "string", required: false }
-      - { label: "Naprawa pamięci Nan", name: "naprawa_pamieci_nan", widget: "string", required: false }
-      - { label: "Naprawa układu podświetlania", name: "naprawa_ukladu_podswietlania", widget: "string", required: false }
-      - { label: "Naprawa układu dotyku", name: "naprawa_ukladu_dotyku", widget: "string", required: false }
-      - { label: "Naprawa układu ładowania", name: "naprawa_ukladu_ladowania", widget: "string", required: false }
-      - { label: "Naprawa zalania", name: "naprawa_zalania", widget: "string", required: false }
-      - { label: "Wymiana przedniego aparatu", name: "wymiana_przedniego_aparatu", widget: "string", required: false }
-      - { label: "Wymiana przycisków głośności", name: "wymiana_przyciskow_glosnosci", widget: "string", required: false }
-      - { label: "Wymiana tylnego aparatu", name: "wymiana_tylnego_aparatu", widget: "string", required: false }
-      - { label: "Wymiana wyswietlacza", name: "wymiana_wyswietlacza", widget: "string", required: false }
-      - { label: "Wymiana złącza ładowania", name: "wymiana_zlacza_ladowania", widget: "string", required: false }
-      - { label: "Wymiana baterii", name: "wymiana_baterii", widget: "string", required: false }
-      - { label: "Wymiana obudowy", name: "wymiana_obudowy", widget: "string", required: false }
-      - { label: "Wymiana przycisku home", name: "wymiana_przycisku_home", widget: "string", required: false }
-      - { label: "Naprawa wibracji", name: "naprawa_wibracji", widget: "string", required: false }
-      - { label: "Wymiana mikrofonu", name: "wymiana_mikrofonu", widget: "string", required: false }
-      - { label: "Wymiana głośnika rozmów", name: "wymiana_glosnika_rozmow", widget: "string", required: false }
-      - { label: "Wymiana głośnika audio", name: "wymiana_glosnika_audio", widget: "string", required: false }
+      - { label: "Tytuł", name: "title", widget: "string", required: false }
+      - { label: "Zdjęcie", name: "thumbnail", widget: "image" }
+      - { label: "Opis", name: "description", widget: "text" }
 
