@@ -100,7 +100,13 @@ description: Opis
                 <div class="modal-container">
                     <h3>{{ post.data.title }}</h3>
                     <form id="serviceForm"
-                        action="https://www.futurewebstudio.pl/form/forms/serviceForm.php" method="POST">
+                    action="https://formsubmit.co/kontakt@futurewebstudio.pl" method="POST">
+
+                    <input name="_next" type="hidden" value="https://mobileszop.pl/wyslano-zgloszenie"> 
+                                    <input name="_captcha" type="hidden" value="false"> 
+                                    <input name="_honey" type="text" style="display:none"> 
+                                    <input name="_template" type="hidden" value="box"> 
+                                    <input name="_subject" type="hidden" value="Zgłoszenie serwisowe - Laptop">
 
                         <div class="row g-3">
                             <div class="col-md-6">
