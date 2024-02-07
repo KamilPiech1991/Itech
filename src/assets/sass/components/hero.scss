@@ -3,12 +3,12 @@
     z-index: 1
 }
 
-.section-hero video {
+.section-hero iframe {
     position: absolute;
-    top: 0;
-    left: 0;
+    aspect-ratio: 27/12;
     width: 100%;
-    z-index: 9999;
+    height: 100%;
+    z-index: 3
 }
 
 .section-hero .image-wrapper {
