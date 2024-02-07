@@ -13,7 +13,7 @@
             <div class="content">
                 <!-- Tab links -->
                 <div class="tabs mb-5">
-                    <button class="tablinks" data-item="item-4" aria-label="Tab button 4">
+                    <button class="tablinks active" data-item="item-4" aria-label="Tab button 4">
                         <p>Telefon</p>
                     </button>
                     <button class="tablinks" data-item="item-3" aria-label="Tab button 3">
@@ -22,14 +22,14 @@
                     <button class="tablinks" data-item="item-2" aria-label="Tab button 2">
                         <p>Laptop</p>
                     </button>
-                    <button class="tablinks active" data-item="item-1" aria-label="Tab button 1">
+                    <button class="tablinks" data-item="item-1" aria-label="Tab button 1">
                         <p>Komputer</p>
                     </button>
                 </div>
 
                 <!-- Tab content -->
                 <div class="wrapper_tabcontent">
-                    <div id="item-1" class="tabcontent active">
+                    <div id="item-1" class="tabcontent">
                         {% for post in collections.services_computer.slice(0, 3) %}
                         {% set index = loop.index + 1 %}
                         <div class="row gx-5 align-items-center pt-small">
@@ -335,7 +335,7 @@
                             <a href="/cennik-napraw/serwis-tabletow/" class="button">Zobacz wszystko</a>
                         </div>
                     </div>
-                    <div id="item-4" class="tabcontent">
+                    <div id="item-4" class="tabcontent active">
                         {% for post in collections.services_phone.slice(0, 3) %}
                         {% set index = loop.index + 300 %}
                         <div class="row gx-5 align-items-center pt-small">
