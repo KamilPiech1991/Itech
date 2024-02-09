@@ -4709,14 +4709,6 @@ img {
   z-index: 1;
 }
 
-.section-hero iframe {
-  position: absolute;
-  aspect-ratio: 27/12;
-  height: 100%;
-  pointer-events: none;
-  z-index: 3;
-}
-
 .section-hero .image-wrapper {
   position: absolute;
   height: 100%;
@@ -4814,9 +4806,66 @@ img {
   color: #fff;
 }
 
+.hero-bg {
+  overflow: hidden;
+}
+
+.video-bg-container {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.video-bg-player, .video-bg-overlay,
+.video-bg iframe {
+  position: absolute;
+}
+
+.video-bg-player,
+.video-bg iframe {
+  pointer-events: none;
+}
+
+.video-bg-player {
+  top: 50%;
+  left: 50%;
+  width: 150%;
+  height: 100%;
+  padding-bottom: 0;
+  transform: translate(-50%, -50%);
+}
+
+.video-bg-overlay,
+.video-bg iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.video-bg-overlay {
+  transition: all 0.25s;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.video-bg-overlay--fadeOut {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.video-bg iframe {
+  top: 0;
+  left: 0;
+}
+
 @media (min-width: 767px) {
-  .section-hero iframe {
+  .video-bg-player {
+    top: 50%;
+    left: 50%;
     width: 100%;
+    height: 100%;
+    padding-bottom: 66.25%;
+    transform: translate(-50%, -50%);
   }
   .hero-content {
     text-align: left;
