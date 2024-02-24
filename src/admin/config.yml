@@ -12,8 +12,8 @@ public_foder: "/assets/img"
 # Posts
 collections:
   - name: "posts"
-    label: "Blog" 
-    folder: "src/assets/img"
+    label: "Wpisy" 
+    folder: "src/blog"
     media_folder: "src/assets/img"
     public_folder: "/assets/img"
     create: true
