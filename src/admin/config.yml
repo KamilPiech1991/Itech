@@ -27,8 +27,6 @@ collections:
       - {label: "Obrazek", name: "thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
 
-# Add your collections. Here's an example of multiple collections: 
-collections:
 # Telefony
   - label: "Telefony" 
     name: "services_phone"
