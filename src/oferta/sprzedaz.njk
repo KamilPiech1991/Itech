@@ -67,16 +67,13 @@ description: Opis
                             <input id="name" type="text" name="Imię i nazwisko" placeholder="Imię i nazwisko">
                         </div>
                         <div class="form-field">
-                            <input type="hidden" value="{{ post.data.title }}">
-                        </div>
-                        <div class="form-field">
                             <input id="phone" type="tel" name="Telefon" placeholder="Numer telefonu">
                         </div>
                         <div class="form-field">
                             <input id="mail" type="mail" name="Email" placeholder="Adres email" required>
                         </div>
                         <div class="form-field">
-                            <input id="subject" type="text" name="Rodzaj naprawy" placeholder="Rodzaj naprawy">
+                            <input id="product_name" type="text" name="Nazwa produktu" value="{{ post.data.title }}">
                         </div>
                         <div class="form-field">
                             <textarea name="Wiadomosc" placeholder="Treść wiadomości" required></textarea>

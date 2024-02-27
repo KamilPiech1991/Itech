@@ -22,6 +22,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/service_tablet/img");
     eleventyConfig.addPassthroughCopy("./src/service_computer/img");
     eleventyConfig.addPassthroughCopy("./src/service_laptop/img");
+    eleventyConfig.addPassthroughCopy("./src/products/img");
     eleventyConfig.addWatchTarget("./src/assets/sass");
 
     eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
