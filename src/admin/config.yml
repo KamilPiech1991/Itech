@@ -9,8 +9,37 @@ local_backend: true
 media_folder: "src/assets/img"
 public_foder: "/assets/img"
 
-# Add your collections. Here's an example of multiple collections: 
+# Posts
 collections:
+  - name: "posts"
+    label: "Wpisy" 
+    folder: "src/blog"
+    media_folder: "src/assets/img"
+    public_folder: "/assets/img"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk"}
+      - {label: "Tytuł", name: "title", widget: "string"}
+      - {label: "Opis", name: "description", widget: "text"}
+      - {label: "Data", name: "date", widget: "datetime"}
+      - {label: "Obrazek", name: "thumbnail", widget: "image"}
+
+# Products
+  - name: "products"
+    label: "Produkty" 
+    folder: "src/products"
+    media_folder: "src/products/img"
+    public_folder: "/products/img"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/product.njk"}
+      - {label: "Tytuł", name: "title", widget: "string"}
+      - {label: "Opis", name: "description", widget: "text"}
+      - {label: "Data", name: "date", widget: "datetime"}
+      - {label: "Obrazek", name: "thumbnail", widget: "image"}
+
 # Telefony
   - label: "Telefony" 
     name: "services_phone"
