@@ -1,6 +1,6 @@
 ---
 title: Wymiana głośnika rozmów w telefonie
-thumbnail: /service_phone/img/429092200_712514451050623_5642872363917719640_n.jpg
+thumbnail: /service_phone/img/429396607_3704229713200109_5341975895266302143_n.jpg
 description: Jednym z potencjalnych problemów smartfona jest uszkodzenie
   głośnika odpowiedzialnego za emisję dźwięku. Niemniej jednak istnieje
   możliwość skutecznej wymiany głośnika na całkowicie nowy, co przywróci
