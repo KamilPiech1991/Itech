@@ -1,7 +1,10 @@
 ---
 title: Wymiana mikrofonu w telefonie
-description: Potrzebujesz pilnej naprawy telefonu i szybkiej wymiany mikrofonu? Oczywiście, tylko w Mobile Szop! Twój telefon został stworzony do bezproblemowego prowadzenia rozmów, a mikrofon pełni kluczową rolę w tej funkcji, umożliwiając wygodne rozmowy i nagrywanie dźwięku.
-thumbnail: /assets/img/services/smartfon-1.jpg
+thumbnail: /service_phone/img/pobrane-1-.jpg
+description: Potrzebujesz pilnej naprawy telefonu i szybkiej wymiany mikrofonu?
+  Oczywiście, tylko w Mobile Szop! Twój telefon został stworzony do
+  bezproblemowego prowadzenia rozmów, a mikrofon pełni kluczową rolę w tej
+  funkcji, umożliwiając wygodne rozmowy i nagrywanie dźwięku.
 ---
 
 Potrzebujesz pilnej naprawy telefonu i szybkiej wymiany mikrofonu? Oczywiście, tylko w Mobile Szop! Twój telefon został stworzony do bezproblemowego prowadzenia rozmów, a mikrofon pełni kluczową rolę w tej funkcji, umożliwiając wygodne rozmowy i nagrywanie dźwięku. Nasz serwis świadczy usługi z zakresu wymiany mikrofonu w telefonie od 1999 roku. W tym czasie nasi doświadczeni specjaliści zdobyli umiejętności rozwiązywania problemów o różnym stopniu trudności.
