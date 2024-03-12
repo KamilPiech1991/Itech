@@ -2,6 +2,7 @@
 title: Naprawa telefonu po zalaniu
 description: W sytuacji, gdy telefon ulegnie zalaniu, kluczowe jest odpowiednie postępowanie, aby zminimalizować potencjalne szkody.
 thumbnail: /assets/img/services/naprawa-telefonu-po-zalaniu.jpg
+order: 8
 ---
 
 ## Naprawa Telefonu po Zalaniu - Szybkie Kroki do Bezpiecznej Reakcji

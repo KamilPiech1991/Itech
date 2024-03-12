@@ -2,6 +2,7 @@
 title: Wymiana szybki w telefonie
 description: Szybka na wyświetlaczu telefonu to kluczowy element, a jej uszkodzenie, zarysowanie lub pęknięcie podczas użytkowania może prowadzić do problemów z ekranem, dotykiem lub nawet utrudniać korzystanie z aparatu podczas robienia zdjęć, zwłaszcza jeśli uszkodzenie dotyczy obiektywu selfie.
 thumbnail: /assets/img/services/wymiana-szybki-w-telefonie.jpg
+order: 2
 ---
 
 ### Wymiana szybki w telefonie  –  kiedy zgłosić awarię?

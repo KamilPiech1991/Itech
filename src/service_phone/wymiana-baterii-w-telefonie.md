@@ -2,6 +2,7 @@
 title: Wymiana baterii w telefonie
 description: W naszym serwisie  Mobile Szop oferujemy błyskawiczną wymianę wadliwego akumulatora. Dzięki naszej wysokiej jakości usługi, możesz cieszyć się sprawnym urządzeniem już po 15 minutach.
 thumbnail: /assets/img/services/wymiana-baterii-w-telefonie.jpg
+order: 6
 ---
 
 Proces wymiany baterii w telefonie to szybki sposób na wydłużenie żywotności urządzenia. Jak rozpoznać, że bateria w smartfonie nie działa poprawnie? Oto kilka sygnałów:

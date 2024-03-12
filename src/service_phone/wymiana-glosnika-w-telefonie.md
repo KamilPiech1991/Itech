@@ -2,6 +2,7 @@
 title: Wymiana głośnika rozmów w telefonie
 description: Jednym z potencjalnych problemów smartfona jest uszkodzenie głośnika odpowiedzialnego za emisję dźwięku. Niemniej jednak istnieje możliwość skutecznej wymiany głośnika na całkowicie nowy, co przywróci urządzeniu doskonałe działanie i pełną funkcjonalność. 
 thumbnail: /assets/img/services/wymiana-glosnika-rozmow-w-telafonie.jpg
+order: 5
 ---
 
 ## Wymiana Głośnika Rozmów w Telefonie - Przywracamy Doskonały Dźwięk

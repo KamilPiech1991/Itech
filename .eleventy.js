@@ -36,26 +36,46 @@ module.exports = function(eleventyConfig) {
       return collectionApi.getFilteredByGlob('src/products/**/*.md').reverse();
     });
 
-
     eleventyConfig.addCollection('services', function(collectionApi) {
       return collectionApi.getFilteredByGlob('src/services/**/*.md').reverse();
     });
 
-    eleventyConfig.addCollection('services_computer', function(collectionApi) {
-      return collectionApi.getFilteredByGlob('src/service_computer/**/*.md').reverse();
+    eleventyConfig.addCollection('services_computer', (collection) => {
+      const services_computer = collection.getFilteredByGlob('src/service_computer/**/*.md').reverse();
+      return services_computer.sort((a, b) => {
+        const orderA = a.data.order || 0;
+        const orderB = b.data.order || 0;
+        return orderA - orderB;
+      });
     });
 
-    eleventyConfig.addCollection('services_tablet', function(collectionApi) {
-      return collectionApi.getFilteredByGlob('src/service_tablet/**/*.md').reverse();
+    eleventyConfig.addCollection('services_tablet', (collection) => {
+      const services_tablet = collection.getFilteredByGlob('src/service_tablet/**/*.md').reverse();
+      return services_tablet.sort((a, b) => {
+        const orderA = a.data.order || 0;
+        const orderB = b.data.order || 0;
+        return orderA - orderB;
+      });
     });
 
-    eleventyConfig.addCollection('services_phone', function(collectionApi) {
-      return collectionApi.getFilteredByGlob('src/service_phone/**/*.md').reverse();
+    eleventyConfig.addCollection('services_phone', (collection) => {
+      const services_phone = collection.getFilteredByGlob('src/service_phone/**/*.md').reverse();
+      return services_phone.sort((a, b) => {
+        const orderA = a.data.order || 0;
+        const orderB = b.data.order || 0;
+        return orderA - orderB;
+      });
     });
 
-    eleventyConfig.addCollection('services_laptop', function(collectionApi) {
-      return collectionApi.getFilteredByGlob('src/service_laptop/**/*.md').reverse();
-    });
+    eleventyConfig.addCollection('services_laptop', (collection) => {
+          const services_laptop = collection.getFilteredByGlob('src/service_laptop/**/*.md').reverse();
+          return services_laptop.sort((a, b) => {
+            const orderA = a.data.order || 0;
+            const orderB = b.data.order || 0;
+            return orderA - orderB;
+          });
+        });
+    
 
     eleventyConfig.addNunjucksAsyncShortcode('Image', async (src, alt) => {
       if (!alt) {

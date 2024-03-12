@@ -54,8 +54,7 @@ collections:
       - { label: "Tytuł", name: "title", widget: "string", required: false }
       - { label: "Zdjęcie", name: "thumbnail", widget: "image" }
       - { label: "Opis", name: "description", widget: "text" }
-
-
+      - { label: "Kolejność", name: "order", widget: "number" }
 
 # Tablet
   - label: "Tablety"   
@@ -71,8 +70,7 @@ collections:
       - { label: "Tytuł", name: "title", widget: "string", required: false }
       - { label: "Zdjęcie", name: "thumbnail", widget: "image" }
       - { label: "Opis", name: "description", widget: "text" }
-
-
+      - {label: "Kolejność", name: "order", widget: "number"}
 
 # Computer
   - label: "Komputery"   
@@ -88,7 +86,7 @@ collections:
       - { label: "Tytuł", name: "title", widget: "string", required: false }
       - { label: "Zdjęcie", name: "thumbnail", widget: "image" }
       - { label: "Opis", name: "description", widget: "text" }
-
+      - { label: "Kolejność", name: "order", widget: "number" }
 
 # Laptop
   - label: "Laptopy"   
@@ -104,4 +102,4 @@ collections:
       - { label: "Tytuł", name: "title", widget: "string", required: false }
       - { label: "Zdjęcie", name: "thumbnail", widget: "image" }
       - { label: "Opis", name: "description", widget: "text" }
-
+      - { label: "Kolejność", name: "order", widget: "number" }
