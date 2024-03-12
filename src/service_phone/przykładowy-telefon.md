@@ -1,10 +1,4 @@
 ---
-<<<<<<< HEAD
-title: Przykładowy telefon
-thumbnail: /service_phone/img/_dsc5797.jpg
-description: Przykładowy opis
-order: 7
-=======
 title: Usuwanie BLOKAD  Operatorów , Icloud , Google , Pin (Bez usuwania danych)
 thumbnail: /service_phone/img/blokada-operatora.jpg
 description: >-
@@ -36,5 +30,5 @@ description: >-
   Usuwamy blokady (kod PIN, wzór Pattern).
 
   [Wgrywamy Usługi Google Play Huawei].
->>>>>>> bd327ed4d5f7fe6a1c59947681766c78bef211e5
+
 ---
